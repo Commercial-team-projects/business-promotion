@@ -1,4 +1,48 @@
+/*global styles*/
+*,*::after,*::before {
+    box-sizing: border-box;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    color: #22343D;
+    background-color: #fff;
+    width: 1440px;
+    margin: 0 auto;
 
+}
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+    padding: 0;
+    
+}
+p {
+    margin: 0;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+img {
+    display: block;
+    max-width: 100%;
+    object-fit: cover;
+}
+/*header*/
+/*section 1*/
+/*section 2*/
+/*section 3*/
+/*section 4*/
+/*section 5*/
+/*section 6*/
+/*section 7*/
+/*section 8*/
+/*section 9*/
 /* Стилі для секції 9 - блок фідбек клієнтів */
 .client-block {
     width: 327px;
@@ -9,3 +53,5 @@
     width: 968px;
     background-color: #02897A;
 }
+/*section 10*/
+/*footer*/
