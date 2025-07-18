@@ -1,22 +1,27 @@
 /*global styles*/
-*,*::after,*::before {
-    box-sizing: border-box;
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
 }
 body {
-    font-family: "Poppins", sans-serif;
-    color: #22343D;
-    background-color: #fff;
-    width: 1440px;
-    margin: 0 auto;
-
+  font-family: "Poppins", sans-serif;
+  color: #22343d;
+  background-color: #fff;
+  width: 1440px;
+  margin: 0 auto;
 }
-h1, h2, h3, h4, h5, h6{
-    margin: 0;
-    padding: 0;
-    
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
 }
 p {
-    margin: 0;
+  margin: 0;
 }
 ul {
   list-style-type: none;
@@ -25,16 +30,46 @@ ul {
 }
 
 a {
-    text-decoration: none;
-    color: currentColor;
+  text-decoration: none;
+  color: currentColor;
 }
 img {
-    display: block;
-    max-width: 100%;
-    object-fit: cover;
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
 }
 /*header*/
 /*section 1*/
+.hero-title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 150%;
+}
+
+.hero-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 156%;
+}
+
+.header-cta-btn {
+  font-weight: 700;
+  font-size: 16px;
+  color: #fff;
+  background-color: #02897a;
+  border: none;
+  border-radius: 4px;
+}
+.header-video-btn {
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #02897a;
+  border: none;
+  background-color: #fff;
+}
+
 /*section 2*/
 /*section 3*/
 /*section 4*/
@@ -45,13 +80,13 @@ img {
 /*section 9*/
 /* Стилі для секції 9 - блок фідбек клієнтів */
 .client-block {
-    width: 327px;
-    height: 240px;
+  width: 327px;
+  height: 240px;
 }
-.call-to-action{
-    height: 345px;
-    width: 968px;
-    background-color: #02897A;
+.call-to-action {
+  height: 345px;
+  width: 968px;
+  background-color: #02897a;
 }
 /*section 10*/
 /*footer*/
