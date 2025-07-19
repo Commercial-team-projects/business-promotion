@@ -1,7 +1,10 @@
 /*global styles*/
-*,*::after,*::before {
+*,
+*::after,
+*::before {
     box-sizing: border-box;
 }
+
 body {
     font-family: "Poppins", sans-serif;
     color: #22343D;
@@ -10,29 +13,39 @@ body {
     margin: 0 auto;
 
 }
-h1, h2, h3, h4, h5, h6{
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin: 0;
     padding: 0;
-    
+
 }
+
 p {
     margin: 0;
 }
+
 ul {
-  list-style-type: none;
-  margin: 0;
-  padding-left: 0;
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
 }
 
 a {
     text-decoration: none;
     color: currentColor;
 }
+
 img {
     display: block;
     max-width: 100%;
     object-fit: cover;
 }
+
 /*header*/
 /*section 1*/
 /*section 2*/
@@ -42,16 +55,100 @@ img {
 /*section 6*/
 /*section 7*/
 /*section 8*/
+.price-list {
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.price-title {
+    font-size: 34px;
+    text-align: center;
+}
+
+.price-text {
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+}
+
+.price-list-standard:hover {
+    background-color: #02897a;
+    color: #ffffff;
+}
+
+.price-list-offer {
+    font-size: 24px;
+    line-height: 1.67;
+}
+
+.price-list-text {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    line-height: 2.5;
+}
+
+.price-list-rate {
+    font-size: 76px;
+    line-height: 1.32;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #02897a;
+}
+
+.price-list-standard:hover .price-list-rate {
+    color: #ffffff;
+}
+
+.price-list-access p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.38;
+    letter-spacing: 0.01em;
+}
+
+.price-list-rate>sup {
+    font-size: 24px;
+    line-height: 1.25;
+}
+
+.price-list-rate>span {
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.01em;
+    color: #afafaf;
+}
+
+.price-list-standard:hover .price-list-rate>span {
+    color: #e0e0e0;
+}
+
+.price-list-order {
+    background-color: #02897a;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #fff;
+}
+
+.price-list-standard:hover .price-list-order {
+    background-color: #ffffff;
+    color: #02897a;
+}
+
+
 /*section 9*/
 /* Стилі для секції 9 - блок фідбек клієнтів */
 .client-block {
     width: 327px;
     height: 240px;
 }
-.call-to-action{
+
+.call-to-action {
     height: 345px;
     width: 968px;
     background-color: #02897A;
 }
+
 /*section 10*/
 /*footer*/
