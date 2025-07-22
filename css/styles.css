@@ -1,22 +1,51 @@
 /*global styles*/
-*,*::after,*::before {
-    box-sizing: border-box;
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
 }
-body {
-    font-family: "Poppins", sans-serif;
-    color: #22343D;
-    background-color: #fff;
-    width: 1440px;
-    margin: 0 auto;
 
+/*global color styles*/
+:root {
+  /*bgm and accent color styles*/
+  --color-green: #02897a;
+  --color-blue: #4d8dff;
+  --color-purple: #740a76;
+  --color-red: #f03e3d;
+  --color-white-cloud: #f5f5f5;
+  --color-white: #fff;
+
+  /*text color styles*/
+  --color-black: #000;
+  --color-dark-blue1: #22343d;
+  --color-dark-blue2: #173a56;
+  --color-dark-brown: #2f281e;
+  --color-dark-purple: #252b42;
+  --color-dark-primary: #1f2e35;
+  --color-dark-secondary: #30444e;
+  --color-secondary-gray: #737373;
+  --color-gray: #475e69;
+  --color-white: #e4e9f3;
 }
-h1, h2, h3, h4, h5, h6{
-    margin: 0;
-    padding: 0;
-    
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #22343d;
+  background-color: #fff;
+  width: 1440px;
+  margin: 0 auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
 }
 p {
-    margin: 0;
+  margin: 0;
 }
 ul {
   list-style-type: none;
@@ -25,13 +54,13 @@ ul {
 }
 
 a {
-    text-decoration: none;
-    color: currentColor;
+  text-decoration: none;
+  color: currentColor;
 }
 img {
-    display: block;
-    max-width: 100%;
-    object-fit: cover;
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
 }
 /*header*/
 /*section 1*/
@@ -45,18 +74,8 @@ img {
 /*section 9*/
 /* Стилі для секції 9 - блок фідбек клієнтів */
 .client-block {
-    width: 327px;
-    height: 240px;
-}
-.promo-section {
-  height: 345px;
-  width: 968px;
-  background-color: #02897a;
-}
-
-.promo-btn {
-  width: 150px;
-  height: 50px;
+  width: 327px;
+  height: 240px;
 }
 
 .testimonial-section {
@@ -69,12 +88,26 @@ img {
 }
 
 .testimonial-item-desc {
+  color: var(--color-dark-purple);
 }
 
 .testimonial-item-client-name {
+  color: var(--color-green);
 }
 
 .testimonial-item-client-role {
+  color: var(--c);
 }
 
 /*section 10*/
+
+.promo-section {
+  height: 345px;
+  width: 968px;
+  background-color: var(--color-green);
+}
+
+.promo-btn {
+  width: 150px;
+  height: 50px;
+}
