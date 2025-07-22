@@ -48,10 +48,15 @@ img {
     width: 327px;
     height: 240px;
 }
-.call-to-action{
-    height: 345px;
-    width: 968px;
-    background-color: #02897A;
+.promo-section {
+  height: 345px;
+  width: 968px;
+  background-color: #02897a;
+}
+
+.promo-btn {
+  width: 150px;
+  height: 50px;
 }
 
 .testimonial-section {
