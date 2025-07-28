@@ -102,6 +102,47 @@ img {
 }
 
 /*section 2*/
+.feature-title {
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.feature-list-item-img {
+  border-radius: 19px;
+}
+
+.bg-green {
+  background-color: #02897a;
+}
+.bg-blue {
+  background-color: #4d8dff;
+}
+.bg-purple {
+  background-color: #740a76;
+}
+.bg-red {
+  background-color: #f03e3d;
+}
+
+.feature-list-item-title {
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.feature-list-item-desc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 162%;
+}
+
+.feature-btn {
+  font-weight: 700;
+  font-size: 16px;
+  color: #fff;
+  background-color: #02897a;
+  border: none;
+  border-radius: 4px;
+}
 /*section 3*/
 /*section 4*/
 
@@ -155,11 +196,14 @@ img {
 /*section 8*/
 /*section 9*/
 /* Стилі для секції 9 - блок фідбек клієнтів */
-
-
-.testimonial-section {
+.client-block {
+  width: 327px;
+  height: 240px;
 }
-.testimonial-title {
+.call-to-action {
+  height: 345px;
+  width: 968px;
+  background-color: #02897a;
 }
 
 .testimonial-desc {
@@ -200,3 +244,5 @@ img {
   width: 150px;
   height: 50px;
 }
+
+/*footer*/
