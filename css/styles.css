@@ -34,7 +34,7 @@ body {
   background-color: #fff;
   width: 1440px;
   margin: 0 auto;
-}
+  }
 h1,
 h2,
 h3,
@@ -71,6 +71,36 @@ img {
 }
 
 /*section 1*/
+.hero-title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 150%;
+}
+
+.hero-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 156%;
+}
+
+.header-cta-btn {
+  font-weight: 700;
+  font-size: 16px;
+  color: #fff;
+  background-color: #02897a;
+  border: none;
+  border-radius: 4px;
+}
+.header-video-btn {
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #02897a;
+  border: none;
+  background-color: #fff;
+}
+
 /*section 2*/
 /*section 3*/
 /*section 4*/
@@ -126,9 +156,9 @@ img {
 /*section 9*/
 /* Стилі для секції 9 - блок фідбек клієнтів */
 
+
 .testimonial-section {
 }
-
 .testimonial-title {
 }
 
