@@ -195,6 +195,48 @@ img {
 }
 
 /*section 6*/
+
+.staff {
+    width: 916px;
+    height: 489px;
+}
+
+.staff-heading {
+    font-weight: 700;
+    font-size: 32px;
+    text-align: center;
+    color: #22343d;
+}
+
+.staff-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.625;
+    text-align: center;
+    color: #22343d;
+}
+
+.staff-service {
+    list-style-type: none;
+}
+
+.text-service {
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    color: #2f281e;
+}
+
+.service-button {
+    border-radius: 4px;
+    width: 216px;
+    height: 53px;
+    background: #02897a;
+    font-weight: 700;
+    font-size: 16px;
+    color: #fff;
+}
+
 /*section 7*/
 .strategies-title {
     font-weight: 700;
