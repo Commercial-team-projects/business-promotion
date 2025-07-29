@@ -25,7 +25,7 @@
   --color-dark-secondary: #30444e;
   --color-secondary-gray: #737373;
   --color-gray: #475e69;
-  --color-white: #e4e9f3;
+  --color-white-light: #e4e9f3;
 }
 
 body {
@@ -64,13 +64,20 @@ img {
   object-fit: cover;
 }
 
-/*header*/
-
-/* container main size  */
+/* COMMON  */
 .container {
-  max-width: 1100px;
+  max-width: 1150px;
+  width: 100%;
+  padding: 0 20px;
   margin: 0 auto;
 }
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+/*header*/
 
 /*section 1*/
 .hero-section .container {
@@ -394,50 +401,147 @@ h1 {
   font-weight: 700;
   font-size: 16px;
   color: #fff;
+
+/*SECTION STRATEGY*/
+
+.section-strategy {
+  margin-top: 100px;
+  margin-bottom: 170px;
 }
 
-/*section 7*/
-.strategies-title {
-  font-weight: 700;
+.contents-strategy {
+}
+
+.strategy-title {
   font-size: 34px;
+  margin-bottom: 10px;
 }
-
-.strategies-text {
+.strategy-title-text {
+  margin-bottom: 40px;
   font-weight: 500;
-  font-size: 16px;
-  /* line-height: 26px; */
-  line-height: 1.625;
+  line-height: 1.63;
+}
+.strategy-list {
+  display: flex;
+  gap: 30px;
+}
+.strategy-list-item {
+  width: calc((100% - 60px) / 3);
 }
 
-.item-date {
-  font-weight: 400;
-  font-size: 16px;
-  /* line-height: 28px; */
+.strategy-list-item-box {
+  border: 1px solid #dedede;
+  border-radius: 0 0 8px 8px;
+  padding: 24px;
+  width: 350px;
+}
+
+.strategy-list-text {
   line-height: 1.75;
 }
-
-.date-name {
+.strategy-list-text-part {
   font-weight: 700;
 }
-
-.item-title {
-  font-weight: 700;
+.strategy-list-name {
+  max-width: 336px;
   font-size: 24px;
-  /* line-height: 40px; */
-  line-height: 1.66667;
+  line-height: 1.67;
 }
 
-.title-link:hover,
-.title-link:focus {
+.strategy-list-name-middle {
+  font-size: 24px;
+  line-height: 1.67;
   color: #02897a;
 }
 
-/*section 8*/
-.price-list {
-  background-color: #ffffff;
+/*SECTION PRICE TABLE*/
+
+.price-table {
+}
+.container {
+}
+.price-table-container {
   text-align: center;
 }
+.price-table-title {
+  font-size: 34px;
+  margin-bottom: 10px;
+}
+.price-table-text {
+  font-size: 16px;
+}
+.price-table-list {
+  display: flex;
+  margin-top: 40px;
+  margin-bottom: 100px;
+  gap: 72px;
+  max-width: calc((100% - 144px) / 3);
+}
+.price-list-item {
+}
+.price-list-item-box {
+  border-radius: 8px;
+  width: 322px;
+  height: 456px;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.25);
+  padding: 32px 0;
+}
 
+.price-list-box-title {
+  font-size: 24px;
+  line-height: 1.67;
+}
+
+.price-list-box-text {
+  font-weight: 500;
+  line-height: 1.38;
+  letter-spacing: 0.01em;
+}
+
+.price {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.19;
+  letter-spacing: 0.01em;
+  color: #afafaf;
+}
+
+.price-part {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 76px;
+  line-height: 1.31579;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #02897a;
+}
+
+.price-part-dollar {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.25;
+  letter-spacing: 0em;
+  color: #02897a;
+  vertical-align: super;
+}
+
+.per-month {
+}
+.price-section-button {
+  border-radius: 8px;
+  width: 139px;
+  height: 44px;
+  background: #02897a;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff;
+  border: none;
+}
+
+/*section 9*/
+/* Стилі для секції 9 - блок фідбек клієнтів */
+}
 .price-title {
   font-size: 34px;
   text-align: center;
