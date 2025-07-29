@@ -70,7 +70,7 @@ img {
 
 /* container main size  */
 .container {
-  padding: 0 145px;
+  max-width: 1690 px;
 }
 
 /*section 1*/
@@ -512,15 +512,30 @@ h1 {
 }
 
 /*section 10*/
-.promo-section {
-  height: 345px;
-  width: 968px;
+
+.promo-container {
+  display: flex;
+  height: auto;
+  max-width: 968px;
+  margin: 0 auto;
   background-color: var(--color-green);
 }
 
+.promo-title {
+  color: var(--color-white);
+  width: 65%;
+  margin-bottom: 46px;
+  font-size: 32px;
+}
+
 .promo-btn {
-  width: 150px;
+  background-color: var(--color-white);
+  max: 150px;
   height: 50px;
 }
 
-/*footer*/
+.promo-text-btn {
+  padding-top: 49px;
+  padding-left: 51px;
+  padding-bottom: 56px;
+}
