@@ -35,6 +35,7 @@ body {
   width: 1440px;
   margin: 0 auto;
 }
+
 h1,
 h2,
 h3,
@@ -44,9 +45,11 @@ h6 {
   margin: 0;
   padding: 0;
 }
+
 p {
   margin: 0;
 }
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -57,6 +60,7 @@ a {
   text-decoration: none;
   color: currentColor;
 }
+
 img {
   display: block;
   max-width: 100%;
@@ -64,6 +68,38 @@ img {
 }
 
 /*header*/
+.header-logo-text {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 0.93;
+  color: var(--color-dark-blue2);
+  text-transform: capitalize;
+}
+
+.header-menu-link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.75;
+  color: var(--color-dark-blue1);
+}
+
+.header-menu-link:hover,
+.header-menu-link:focus {
+  font-weight: 600;
+}
+
+.header-register-btn {
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  color: var(--color-dark-blue2);
+  cursor: pointer;
+}
+
+.sign-up {
+  color: var(--color-white);
+  background-color: var(--color-green);
+}
 
 /* container main size  */
 .container {
@@ -81,17 +117,13 @@ img {
 /*section 9*/
 /* Стилі для секції 9 - блок фідбек клієнтів */
 
-.testimonial-section {
-}
+.testimonial-section {}
 
-.testimonial-title {
-}
+.testimonial-title {}
 
-.testimonial-desc {
-}
+.testimonial-desc {}
 
-.testimonial-list {
-}
+.testimonial-list {}
 
 .testimonal-list-item {
   width: 327px;
