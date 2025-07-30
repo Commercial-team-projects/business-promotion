@@ -102,7 +102,9 @@ button {
 .strategy-title-text {
   margin-bottom: 40px;
   font-weight: 500;
+  font-size: 16px;
   line-height: 1.63;
+  max-width: 430px;
 }
 .strategy-list {
   display: flex;
@@ -110,6 +112,11 @@ button {
 }
 .strategy-list-item {
   width: calc((100% - 60px) / 3);
+}
+
+.strategy-list-imag {
+  display: block;
+  border-radius: 8px 8px 0 0;
 }
 
 .strategy-list-item-box {
@@ -161,7 +168,9 @@ button {
   max-width: calc((100% - 144px) / 3);
 }
 .price-list-item {
+  text-align: center;
 }
+
 .price-list-item-box {
   border-radius: 8px;
   width: 322px;
@@ -173,12 +182,19 @@ button {
 .price-list-box-title {
   font-size: 24px;
   line-height: 1.67;
+  margin-bottom: 8px;
+}
+
+.price-list-box-subtitle {
+  line-height: 2.5;
+  margin-bottom: 10px;
 }
 
 .price-list-box-text {
   font-weight: 500;
   line-height: 1.38;
   letter-spacing: 0.01em;
+  margin-bottom: 16px;
 }
 
 .price {
@@ -186,6 +202,7 @@ button {
   line-height: 1.19;
   letter-spacing: 0.01em;
   color: #afafaf;
+  margin-bottom: 36px;
 }
 
 .price-part {
@@ -210,7 +227,9 @@ button {
 
 .per-month {
 }
-.price-section-button {
+.price-list-item .price-button {
+  display: block;
+  margin: 0 auto;
   border-radius: 8px;
   width: 139px;
   height: 44px;
@@ -220,6 +239,29 @@ button {
   font-size: 18px;
   color: #fff;
   border: none;
+}
+
+.price-list-item:hover,
+.price-list-item:focus {
+  background-color: #02897a;
+  color: #ffffff;
+  border-radius: 8px;
+}
+
+.price-list-item:hover .price-button,
+.price-list-item:focus .price-button {
+  background-color: #ffffff;
+  color: #02897a;
+}
+
+.price-list-item:hover .price-part,
+.price-list-item:focus .price-part {
+  color: #ffffff;
+}
+
+.price-list-item:hover .price-part-dollar,
+.price-list-item:focus .price-part-dollar {
+  color: #ffffff;
 }
 
 /*section 9*/
