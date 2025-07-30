@@ -73,59 +73,6 @@ img {
 /*section 1*/
 /*section 2*/
 /*section 3*/
-/*section 4*/
-/*section 5*/
-/*section 6*/
-/*section 7*/
-/*section 8*/
-/*section 9*/
-/* Стилі для секції 9 - блок фідбек клієнтів */
-
-.testimonial-section {
-}
-
-.testimonial-title {
-}
-
-.testimonial-desc {
-}
-
-.testimonial-list {
-}
-
-.testimonal-list-item {
-  width: 327px;
-  height: 240px;
-}
-
-.testimonial-item-star {
-  display: flex;
-}
-
-.testimonial-item-desc {
-  color: var(--color-dark-purple);
-}
-
-.testimonial-item-client-name {
-  color: var(--color-green);
-}
-
-.testimonial-item-client-role {
-  color: var(--c);
-}
-
-/*section 10*/
-.promo-section {
-  height: 345px;
-  width: 968px;
-  background-color: var(--color-green);
-}
-
-.promo-btn {
-  width: 150px;
-  height: 50px;
-}
-
 /* #region management */
 
 .management-container {
@@ -173,6 +120,7 @@ img {
 
 /* #endregion management*/
 
+/*section 4*/
 /* #region support */
 
 .support-container {
@@ -244,3 +192,9 @@ img {
   line-height: 1.625;
 }
 /* #endregion support*/
+
+/*section 5*/
+/*section 6*/
+/*section 7*/
+/*section 8*/
+/*section 9*/
