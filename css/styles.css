@@ -563,6 +563,7 @@ h1 {
     background-color: #02897a;
     color: #ffffff;
     border-radius: 8px;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.25);
   }
 
   .price-list-item:hover .price-button,
