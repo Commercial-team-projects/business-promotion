@@ -246,6 +246,7 @@ button {
   background-color: #02897a;
   color: #ffffff;
   border-radius: 8px;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.25);
 }
 
 .price-list-item:hover .price-button,
@@ -310,4 +311,94 @@ button {
 .promo-btn {
   width: 150px;
   height: 50px;
+}
+
+/* FOOTER */
+
+.container {
+}
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 60px;
+  margin-top: 100px;
+}
+.footer-logo {
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 0.93;
+  color: #173a56;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.footer-social-list {
+  display: flex;
+  gap: 16px;
+}
+.footer-social-list-item {
+}
+.footer-resource-list {
+}
+.footer-list-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.5;
+  max-width: 295px;
+  margin-bottom: 22px;
+}
+
+.footer-resource-list-item {
+  line-height: 2.19;
+}
+.footer-legal-list {
+}
+
+.footer-legal-list-item {
+  line-height: 2.19;
+}
+.footer-input-box {
+  align-items: center;
+  display: flex;
+}
+
+.footer-input-box img {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+}
+
+.footer-input {
+  display: block;
+  border: 1px solid #bcd0e5;
+  border-radius: 4px;
+  width: 325px;
+  height: 48px;
+  margin-bottom: 25px;
+}
+
+.footer-input::placeholder {
+  color: #02897a;
+}
+
+.footer-input-btn {
+  border-radius: 4px;
+  width: 131px;
+  height: 39px;
+  max-width: 100%;
+  background-color: #02897a;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+  border: none;
+}
+.footer-copyright {
+  font-size: 16px;
+  line-height: 1.86;
+  max-width: 100%;
+  margin: 0 auto;
 }
