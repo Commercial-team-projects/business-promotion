@@ -776,7 +776,10 @@ h1 {
   display: flex;
 }
 
-.footer-input-box {
+.footer-input-box img {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
 }
 
 .footer-input {
@@ -786,8 +789,6 @@ h1 {
   width: 325px;
   height: 48px;
   margin-bottom: 25px;
-  background-image: url("https://res.cloudinary.com/goit-academy/image/upload/v1614773221/codepen/cat_segyum.svg");
-  background-repeat: no-repeat;
 }
 
 .footer-input::placeholder {
