@@ -1,4 +1,4 @@
-/*global styles*/
+/* #region global styles */
 *,
 *::after,
 *::before {
@@ -43,9 +43,11 @@ h6 {
   margin: 0;
   padding: 0;
 }
+
 p {
   margin: 0;
 }
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -56,13 +58,28 @@ a {
   text-decoration: none;
   color: currentColor;
 }
+
 img {
   display: block;
   max-width: 100%;
   object-fit: cover;
 }
 
-/*header*/
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.container {
+  max-width: 1150px;
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+/* #endregion */
+
+/* #region header */
 .header-container {
   display: flex;
   align-items: center;
@@ -140,21 +157,11 @@ img {
   border: none;
 }
 
-/* container main size  */
-.container {
-  max-width: 1150px;
-  width: 100%;
-  padding: 0 20px;
-  margin: 0 auto;
-}
+/* #endregion */
 
-button {
-  cursor: pointer;
-  font-family: inherit;
-}
 
-/*section 3*/
-/* #region management */
+
+/* #region section 3 management */
 .managment {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -169,6 +176,7 @@ button {
 .managment-content {
   width: 486px;
 }
+
 .managment-title {
   font-weight: 600;
   font-size: 16px;
@@ -176,10 +184,12 @@ button {
   margin-bottom: 25px;
   line-height: 38px;
 }
+
 .managment-acent {
   font-weight: 700;
   font-size: 32px;
 }
+
 .managment-text {
   font-weight: 400;
   font-size: 16px;
@@ -193,6 +203,7 @@ button {
   line-height: 1.625;
   margin-bottom: 12px;
 }
+
 .managment-item-text {
   font-weight: 400;
   font-size: 16px;
@@ -205,12 +216,12 @@ button {
 
 /* #endregion management*/
 
-/*section 4*/
-/* #region support */
+/* #region section 4 support */
 .support {
   padding-top: 50px;
   padding-bottom: 50px;
 }
+
 .support-container {
   display: flex;
   gap: 84px;
@@ -221,6 +232,7 @@ button {
   margin-right: 35px;
   width: 450px;
 }
+
 .support-title {
   font-weight: 600;
   font-size: 16px;
@@ -233,12 +245,14 @@ button {
   font-weight: 700;
   font-size: 32px;
 }
+
 .support-text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.625;
   margin-bottom: 30px;
 }
+
 .support-list-item:not(:last-child) {
   margin-bottom: 25px;
 }
@@ -251,15 +265,18 @@ button {
   border-radius: 14px;
   width: 35px;
   height: 35px;
-  flex-shrink: 0; /* щоб не зменшувалась ширина */
+  flex-shrink: 0;
+  /* щоб не зменшувалась ширина */
 }
 
 .support-list-item:nth-child(1) .support-icon-container {
   background: #f90;
 }
+
 .support-list-item:nth-child(2) .support-icon-container {
   background: #f03e3d;
 }
+
 .support-list-item:nth-child(3) .support-icon-container {
   background: #4d8dff;
 }
@@ -269,9 +286,11 @@ button {
   align-items: center;
   gap: 30px;
 }
+
 .support-item-icon {
   fill: #fff;
 }
+
 .support-item-text {
   font-weight: 400;
   font-size: 16px;
@@ -290,7 +309,56 @@ button {
   color: #22343d;
 }
 
-/*section 6*/
+/* #endregion */
+
+/* #region section 5 */
+
+.collaboration {
+  width: 1110px;
+  height: 500px;
+}
+
+.li-heading {
+  list-style-type: none;
+}
+
+.li-item {
+  list-style-type: none;
+}
+
+.opti-text {
+  font-weight: 600;
+  font-size: 16px;
+  color: #22343d;
+}
+
+.text-heading {
+  font-weight: 700;
+  font-size: 32px;
+  color: #22343d;
+}
+
+.text-collaboration {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.625;
+  color: #22343d;
+}
+
+.item-list {
+  padding-left: 0;
+}
+
+.text-item {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.625;
+  color: #22343d;
+}
+
+/* #endregion */
+
+/* #region section 6 */
 
 .staff {
   width: 916px;
@@ -331,21 +399,24 @@ button {
   font-weight: 700;
   font-size: 16px;
   color: #fff;
+}
 
-/*SECTION STRATEGY*/
+/* #endregion */
+
+/* #region  STRATEGY */
 
 .section-strategy {
   margin-top: 100px;
   margin-bottom: 170px;
 }
 
-.contents-strategy {
-}
+/* .contents-strategy {} */
 
 .strategy-title {
   font-size: 34px;
   margin-bottom: 10px;
 }
+
 .strategy-title-text {
   margin-bottom: 40px;
   font-weight: 500;
@@ -353,10 +424,12 @@ button {
   line-height: 1.63;
   max-width: 430px;
 }
+
 .strategy-list {
   display: flex;
   gap: 30px;
 }
+
 .strategy-list-item {
   width: calc((100% - 60px) / 3);
 }
@@ -376,9 +449,11 @@ button {
 .strategy-list-text {
   line-height: 1.75;
 }
+
 .strategy-list-text-part {
   font-weight: 700;
 }
+
 .strategy-list-name {
   max-width: 336px;
   font-size: 24px;
@@ -391,22 +466,27 @@ button {
   color: #02897a;
 }
 
-/*SECTION PRICE TABLE*/
+/* #endregion */
 
-.price-table {
-}
-.container {
-}
+/* #region PRICE TABLE */
+
+/* .price-table {} */
+
+/* .container {} */
+
 .price-table-container {
   text-align: center;
 }
+
 .price-table-title {
   font-size: 34px;
   margin-bottom: 10px;
 }
+
 .price-table-text {
   font-size: 16px;
 }
+
 .price-table-list {
   display: flex;
   margin-top: 40px;
@@ -414,6 +494,7 @@ button {
   gap: 72px;
   max-width: calc((100% - 144px) / 3);
 }
+
 .price-list-item {
   text-align: center;
 }
@@ -472,8 +553,8 @@ button {
   vertical-align: super;
 }
 
-.per-month {
-}
+/* .per-month {} */
+
 .price-list-item .price-button {
   display: block;
   margin: 0 auto;
@@ -511,9 +592,10 @@ button {
   color: #ffffff;
 }
 
-/*section 9*/
-/* Стилі для секції 9 - блок фідбек клієнтів */
-}
+/* #endregion */
+
+/* #region section 9 фідбек клієнтів */
+
 .price-title {
   font-size: 34px;
   text-align: center;
@@ -561,19 +643,19 @@ button {
   letter-spacing: 0.01em;
 }
 
-.price-list-rate > sup {
+.price-list-rate>sup {
   font-size: 24px;
   line-height: 1.25;
 }
 
-.price-list-rate > span {
+.price-list-rate>span {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.01em;
   color: #afafaf;
 }
 
-.price-list-standard:hover .price-list-rate > span {
+.price-list-standard:hover .price-list-rate>span {
   color: #e0e0e0;
 }
 
@@ -590,21 +672,23 @@ button {
   color: #02897a;
 }
 
-/*section 9*/
-/* Стилі для секції 9 - блок фідбек клієнтів */
+/* #endregion */
+
+/* #region section 9  Стилі для секції 9 - блок фідбек клієнтів */
 .client-block {
   width: 327px;
   height: 240px;
 }
+
 .call-to-action {
   height: 345px;
   width: 968px;
   background-color: var(--color-green);
 }
 
-.testimonial-desc {}
+/* .testimonial-desc {} */
 
-.testimonial-list {}
+/* .testimonial-list {} */
 
 .testimonal-list-item {
   width: 327px;
@@ -627,8 +711,9 @@ button {
   color: var(--c);
 }
 
-/*section 10*/
+/* #endregion */
 
+/* #region section 10 */
 .promo-container {
   display: flex;
   height: auto;
@@ -655,3 +740,5 @@ button {
   padding-left: 51px;
   padding-bottom: 56px;
 }
+
+/* #endregion */
