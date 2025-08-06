@@ -926,21 +926,30 @@ h1 {
   display: flex;
   height: auto;
   max-width: 968px;
+  border-radius: 32px;
   margin: 0 auto;
   background-color: var(--color-green);
 }
 
 .promo-title {
   color: var(--color-white);
-  width: 65%;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.51;
+  width: 510px;
   margin-bottom: 46px;
   font-size: 32px;
 }
 
 .promo-btn {
   background-color: var(--color-white);
-  max-width: 150px;
+  border: none;
+  width: 150px;
   height: 50px;
+  border-radius: 8px;
+  color: var(--color-green);
+  font-weight: 600;
+  font-size: 20px;
 }
 
 .promo-text-btn {
