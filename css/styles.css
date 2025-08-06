@@ -159,6 +159,72 @@ button {
 
 /* #endregion */
 
+/* #region section 1 hero */
+.hero-section .container {
+  display: flex;
+  flex-direction: row-reverse;
+  height: 555px;
+  gap: 35px;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.5;
+  color: var(--color-dark-blue1);
+
+  margin-bottom: 18px;
+}
+
+.hero-desc {
+  font-size: 18px;
+  line-height: 1.56;
+  color: var(--color-dark-blue1);
+
+  margin-bottom: 45px;
+}
+
+.hero-section .wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.hero-action-list {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.hero-action-list .main-btn {
+  background-color: var(--color-green);
+  border: none;
+  border-radius: 4px;
+  padding: 16px 42px;
+
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--color-white);
+}
+
+.hero-link {
+  display: flex;
+  align-items: center;
+
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: var(--color-green);
+}
+
+.hero-link-icon {
+  margin-right: 8px;
+}
+
+/* #endregion */
+
 /* #region section 2 feature*/
 .features-section .container {
   margin: 0 auto;
@@ -244,6 +310,7 @@ button {
   font-size: 16px;
   color: var(--color-white);
 }
+
 /* #endregion */
 
 /* #region section 3 management */
@@ -659,6 +726,7 @@ button {
   background-color: #02897a;
   color: #ffffff;
   border-radius: 8px;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.25);
 }
 
 .price-list-item:hover .price-button,
@@ -728,19 +796,19 @@ button {
   letter-spacing: 0.01em;
 }
 
-.price-list-rate > sup {
+.price-list-rate>sup {
   font-size: 24px;
   line-height: 1.25;
 }
 
-.price-list-rate > span {
+.price-list-rate>span {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.01em;
   color: #afafaf;
 }
 
-.price-list-standard:hover .price-list-rate > span {
+.price-list-standard:hover .price-list-rate>span {
   color: #e0e0e0;
 }
 
@@ -824,6 +892,101 @@ button {
   padding-top: 49px;
   padding-left: 51px;
   padding-bottom: 56px;
+}
+
+/* #endregion */
+
+/* #region FOOTER */
+.container {}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 60px;
+  margin-top: 100px;
+}
+
+.footer-logo {
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 0.93;
+  color: #173a56;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.footer-social-list {
+  display: flex;
+  gap: 16px;
+}
+
+.footer-social-list-item {}
+
+.footer-resource-list {}
+
+.footer-list-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.5;
+  max-width: 295px;
+  margin-bottom: 22px;
+}
+
+.footer-resource-list-item {
+  line-height: 2.19;
+}
+
+.footer-legal-list {}
+
+.footer-legal-list-item {
+  line-height: 2.19;
+}
+
+.footer-input-box {
+  align-items: center;
+  display: flex;
+}
+
+.footer-input-box img {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+}
+
+.footer-input {
+  display: block;
+  border: 1px solid #bcd0e5;
+  border-radius: 4px;
+  width: 325px;
+  height: 48px;
+  margin-bottom: 25px;
+}
+
+.footer-input::placeholder {
+  color: #02897a;
+}
+
+.footer-input-btn {
+  border-radius: 4px;
+  width: 131px;
+  height: 39px;
+  max-width: 100%;
+  background-color: #02897a;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+  border: none;
+}
+
+.footer-copyright {
+  font-size: 16px;
+  line-height: 1.86;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 /* #endregion */
