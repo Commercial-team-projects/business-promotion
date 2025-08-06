@@ -595,6 +595,17 @@ h1 {
 
 .strategy-list-item {
   width: calc((100% - 60px) / 3);
+  transition: all 250ms ease-in-out;
+}
+
+.strategy-list-item:hover,
+.strategy-list-item:focus {
+  transform: scale(1.1);
+}
+
+.strategy-list-item:hover .strategy-list-name,
+.strategy-list-item:hover .strategy-list-name {
+  color: #02897a;
 }
 
 .strategy-list-imag {
@@ -621,12 +632,7 @@ h1 {
   max-width: 336px;
   font-size: 24px;
   line-height: 1.67;
-}
-
-.strategy-list-name-middle {
-  font-size: 24px;
-  line-height: 1.67;
-  color: #02897a;
+  transition: color 250ms ease-in-out;
 }
 
 /* #endregion */
@@ -849,7 +855,6 @@ h1 {
   margin-bottom: 40px;
 }
 
-
 .testimonial-list {
   /* display: block; */
   display: flex;
@@ -882,10 +887,7 @@ h1 {
   line-height: 1.75;
   letter-spacing: 0.01em;
   margin-bottom: 16px;
-
 }
-
-
 
 .testimonial-item-star {
   display: flex;
@@ -912,16 +914,15 @@ h1 {
   align-items: center;
 }
 
-.client-name-role {}
+.client-name-role {
+}
 
 .testimonial-item-client-name {
   color: var(--color-green);
-
 }
 
 .testimonial-item-client-role {
   color: var(--c);
-
 }
 
 /* #endregion */
