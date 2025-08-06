@@ -1,99 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Business Promotion</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
-    />
-    <link rel="stylesheet" href="./css/styles.css" />
-  </head>
 
-  <body>
-    <!-- #region Header -->
-    <header class="header-page">
-      <div class="container header-container">
-        <nav class="header-nav">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Business Promotion</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css" />
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+  <!-- #region Header -->
+  <header class="header-page">
+    <div class="container header-container">
+      <nav class="header-nav">
+        <a class="header-logo" href="./index.html">
           <div class="container-logo">
-            <a class="header-logo" href="./index.html">
-              <img
-                class="header-logo-icon"
-                src="./images/logo.png"
-                alt="logo"
-              />
-            </a>
+            <svg class="header-logo-icon" width="40" height="36">
+              <use href="./images/icons.svg#icon-logo">
+            </svg>
             <span class="header-logo-text">product</span>
           </div>
-          <ul class="header-menu">
-            <li class="header-menu-item">
-              <a class="header-menu-link" href="./index.html">Product</a>
-            </li>
-            <li class="header-menu-item">
-              <a class="header-menu-link" href="">Pricing</a>
-            </li>
-            <li class="header-menu-item">
-              <a class="header-menu-link" href="">Customers</a>
-            </li>
-            <li class="header-menu-item">
-              <a class="header-menu-link" href="">Resources</a>
-            </li>
-          </ul>
-        </nav>
-        <ul class="header-reagister">
-          <li class="header-register-item">
-            <button class="header-register-btn sign-in" type="button">
-              Sign In
-            </button>
-          </li>
-          <li class="header-register-item">
-            <button class="header-register-btn sign-up" type="button">
-              Sign Up
-            </button>
+        </a>
+        <ul class="header-menu">
+          <li class="header-menu-item"><a class="header-menu-link current" href="./index.html">Product</a></li>
+          <li class="header-menu-item"><a class="header-menu-link" href="">Pricing</a></li>
+          <li class="header-menu-item"><a class="header-menu-link" href="">Customers</a></li>
+          <li class="header-menu-item"><a class="header-menu-link" href="">Resources</a></li>
+        </ul>
+      </nav>
+      <ul class="header-reagister">
+        <li class="header-register-item"><button class="header-register-btn sign-in" type="button">Sign In</button></li>
+        <li class="header-register-item"><button class="header-register-btn sign-up" type="button">Sign Up</button></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- #endregion -->
+
+  <!-- #region Section 1  -->
+  <section class="hero-section">
+    <div class="container">
+      <img src="./images/hero-img.png" alt="Cooperative quick work illustration" />
+      <div class="wrapper">
+        <h1>Work at the speed of thought Work at the speed of thought</h1>
+        <p class="hero-desc">
+          Tools, tutorials, design and innovation experts, all in one place! The
+          most intuitive way to imagine your next user experience.
+        </p>
+        <ul class="hero-action-list">
+          <li class="hero-action"><button class="main-btn" type="button">Get started</button></li>
+          <li class="hero-action link-action">
+            <a href="#" class="hero-link"><img class="hero-link-icon" src="./images/watch-the-video-icon.png"
+                alt="Watch the video icon" />Watch the Video</a>
           </li>
         </ul>
       </div>
-    </header>
-    <!-- #endregion -->
-
-    <!-- #region Section 1  -->
-    <section class="hero-section">
-      <div class="container">
-        <img
-          src="./images/hero-img.png"
-          alt="Cooperative quick work illustration"
-        />
-        <div class="wrapper">
-          <h1>Work at the speed of thought Work at the speed of thought</h1>
-          <p class="hero-desc">
-            Tools, tutorials, design and innovation experts, all in one place!
-            The most intuitive way to imagine your next user experience.
-          </p>
-          <ul class="hero-action-list">
-            <li class="hero-action">
-              <button class="main-btn" type="button">Get started</button>
-            </li>
-            <li class="hero-action link-action">
-              <a href="#" class="hero-link"
-                ><img
-                  class="hero-link-icon"
-                  src="./images/watch-the-video-icon.png"
-                  alt="Watch the video icon"
-                />Watch the Video</a
-              >
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <!-- #endregion -->
+    </div>
+  </section>
+  <!-- #endregion -->
 
     <!-- #region Section 2 -->
     <section class="features-section">
@@ -283,269 +251,237 @@
     </section>
     <!-- #endregion -->
 
-    <!-- #region Section 6  -->
-    <section class="staff">
-      <h3 class="staff-heading">Quick & Easy Process</h3>
-      <p class="staff-text">
-        Do you require some help for your project: Conception
-        workshop,prototyping, marketing strategy, landing page, UX/UI?
+  <!-- #region Section 6  -->
+  <section class="staff">
+    <h3 class="staff-heading">Quick & Easy Process</h3>
+    <p class="staff-text">
+      Do you require some help for your project: Conception
+      workshop,prototyping, marketing strategy, landing page, UX/UI?
+    </p>
+    <ul class="staff-list">
+      <li class="staff-service">
+        <img src="./images/avatar.png" alt="Young woman" width="98" height="98" />
+        <p class="text-service">I can take care of your pitch</p>
+      </li>
+      <li class="staff-service">
+        <p class="text-service">I can prototype your app</p>
+        <img src="./images/avatar-2.png" alt="Old woman" width="98" height="98" />
+      </li>
+      <li class="staff-service">
+        <p class="text-service">I can take care of your pitch</p>
+        <img src="./images/avatar-1.png" alt="Young boy" width="98" height="98" />
+      </li>
+      <li class="staff-service">
+        <img src="./images/avatar-3.png" alt="Old man" width="98" height="98" />
+        <p class="text-service">I can help marketing strategy</p>
+      </li>
+    </ul>
+  </section>
+  <!-- #endregion -->
+
+  <!-- #region Section 7 STRATEGY -->
+  <section class="section-strategy">
+    <div class="container contents-strategy">
+      <h2 class="strategy-title">Contents Strategies</h2>
+      <p class="strategy-title-text">
+        We focus on ergonomics and meeting you where you work. It's only a
+        keystroke away.
       </p>
-      <ul class="staff-list">
-        <li class="staff-service">
-          <img
-            src="./images/avatar.png"
-            alt="Young woman"
-            width="98"
-            height="98"
-          />
-          <p class="text-service">I can take care of your pitch</p>
+      <ul class="strategy-list">
+        <li class="strategy-list-item">
+          <img class="strategy-list-imag" src="./images/section-strategy/strategy1.jpg" alt="image-bg" />
+          <div class="strategy-list-item-box">
+            <p class="strategy-list-text">
+              By <span class="strategy-list-text-part">Wahid Ari</span> | 03
+              March 2019
+            </p>
+            <h3 class="strategy-list-name">
+              Increasing Prosperity With Positive Thinking
+            </h3>
+          </div>
         </li>
-        <li class="staff-service">
-          <p class="text-service">I can prototype your app</p>
-          <img
-            src="./images/avatar-2.png"
-            alt="Old woman"
-            width="98"
-            height="98"
-          />
+        <li class="strategy-list-item">
+          <img class="strategy-list-imag" src="./images/section-strategy/strategy2.jpg" alt="image-bg" />
+          <div class="strategy-list-item-box">
+            <p class="strategy-list-text">
+              By <span class="strategy-list-text-part">Wahid Ari</span> | 03
+              March 2019
+            </p>
+            <h3 class="strategy-list-name strategy-list-name-middle">
+              Motivation Is The First Step To Success
+            </h3>
+          </div>
         </li>
-        <li class="staff-service">
-          <p class="text-service">I can take care of your pitch</p>
-          <img
-            src="./images/avatar-1.png"
-            alt="Young boy"
-            width="98"
-            height="98"
-          />
-        </li>
-        <li class="staff-service">
-          <img
-            src="./images/avatar-3.png"
-            alt="Old man"
-            width="98"
-            height="98"
-          />
-          <p class="text-service">I can help marketing strategy</p>
+        <li class="strategy-list-item">
+          <img class="strategy-list-imag" src="./images/section-strategy/strategy3.jpg" alt="image-bg" />
+          <div class="strategy-list-item-box">
+            <p class="strategy-list-text">
+              By <span class="strategy-list-text-part">Wahid Ari</span> | 03
+              March 2019
+            </p>
+            <h3 class="strategy-list-name">
+              Success Steps For Your Personal Or Business
+            </h3>
+          </div>
         </li>
       </ul>
-    </section>
-    <!-- #endregion -->
+    </div>
+  </section>
+  <!-- #endregion -->
 
-    <!-- #region Section 7 STRATEGY -->
-    <section class="section-strategy">
-      <div class="container contents-strategy">
-        <h2 class="strategy-title">Contents Strategies</h2>
-        <p class="strategy-title-text">
-          We focus on ergonomics and meeting you where you work. It's only a
-          keystroke away.
-        </p>
-        <ul class="strategy-list">
-          <li class="strategy-list-item">
-            <img
-              class="strategy-list-imag"
-              src="./images/section-strategy/strategy1.jpg"
-              alt="image-bg"
-            />
-            <div class="strategy-list-item-box">
-              <p class="strategy-list-text">
-                By <span class="strategy-list-text-part">Wahid Ari</span> | 03
-                March 2019
-              </p>
-              <h3 class="strategy-list-name">
-                Increasing Prosperity With Positive Thinking
-              </h3>
-            </div>
-          </li>
-          <li class="strategy-list-item">
-            <img
-              class="strategy-list-imag"
-              src="./images/section-strategy/strategy2.jpg"
-              alt="image-bg"
-            />
-            <div class="strategy-list-item-box">
-              <p class="strategy-list-text">
-                By <span class="strategy-list-text-part">Wahid Ari</span> | 03
-                March 2019
-              </p>
-              <h3 class="strategy-list-name strategy-list-name-middle">
-                Motivation Is The First Step To Success
-              </h3>
-            </div>
-          </li>
-          <li class="strategy-list-item">
-            <img
-              class="strategy-list-imag"
-              src="./images/section-strategy/strategy3.jpg"
-              alt="image-bg"
-            />
-            <div class="strategy-list-item-box">
-              <p class="strategy-list-text">
-                By <span class="strategy-list-text-part">Wahid Ari</span> | 03
-                March 2019
-              </p>
-              <h3 class="strategy-list-name">
-                Success Steps For Your Personal Or Business
-              </h3>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <!-- #endregion -->
+  <!-- #region Section 8 PRICE TABLE -->
+  <section class="price-table">
+    <div class="container price-table-container">
+      <h2 class="price-table-title">Price Table</h2>
+      <p class="price-table-text">We offer competitive price</p>
+      <ul class="price-table-list">
+        <li class="price-list-item">
+          <div class="price-list-item-box">
+            <h3 class="price-list-box-title">Free</h3>
+            <p class="price-list-box-subtitle">Brief price description</p>
 
-    <!-- #region Section 8 PRICE TABLE -->
-    <section class="price-table">
-      <div class="container price-table-container">
-        <h2 class="price-table-title">Price Table</h2>
-        <p class="price-table-text">We offer competitive price</p>
-        <ul class="price-table-list">
-          <li class="price-list-item">
-            <div class="price-list-item-box">
-              <h3 class="price-list-box-title">Free</h3>
-              <p class="price-list-box-subtitle">Brief price description</p>
-
-              <p class="price">
-                <span class="price-part">
-                  0<sup class="price-part-dollar">$</sup>
-                </span>
-                Per / month
-              </p>
-
-              <p class="price-list-box-text">Only 2 Operators</p>
-              <p class="price-list-box-text">Notifications</p>
-              <p class="price-list-box-text">Landing Pages</p>
-              <a href="">
-                <button class="button price-button">Order Now</button>
-              </a>
-            </div>
-          </li>
-
-          <li class="price-list-item">
-            <div class="price-list-item-box">
-              <h3 class="price-list-box-title">Standard</h3>
-              <p class="price-list-box-subtitle">Brief price description</p>
-
-              <p class="price">
-                <span class="price-part">
-                  5<sup class="price-part-dollar">$</sup>
-                </span>
-                Per / month
-              </p>
-              <p class="price-list-box-text">5+ Operators</p>
-              <p class="price-list-box-text">Notifications</p>
-              <p class="price-list-box-text">Landing Pages</p>
-              <a href="">
-                <button class="button price-button">Order Now</button>
-              </a>
-            </div>
-          </li>
-          <li class="price-list-item">
-            <div class="price-list-item-box">
-              <h3 class="price-list-box-title">Premium</h3>
-              <p class="price-list-box-subtitle">Brief price description</p>
-
-              <p class="price">
-                <span class="price-part">
-                  10<sup class="price-part-dollar">$</sup>
-                </span>
-                Per / month
-              </p>
-              <p class="price-list-box-text">10+ Operators</p>
-              <p class="price-list-box-text">Notifications</p>
-              <p class="price-list-box-text">Landing Pages</p>
-              <a href="">
-                <button class="button price-button">Order Now</button>
-              </a>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <!-- #endregion -->
-
-    <!-- #region Section 9 client's feedback -->
-    <section class="testimonial-section">
-      <div class="container">
-        <h2 class="testimonial-title">What Clients Say</h2>
-        <p class="testimonial-desc">
-          Problems trying to resolve the conflict between the two major realms
-          of Classical physics: Newtonian mechanics
-        </p>
-        <ul class="testimonial-list">
-          <!--testimonial 1-->
-          <li class="testimonal-list-item">
-            <div class="testimonial-item-star">
-              <img src="./images/Star.png" alt="star" />
-              <img src="./images/Star.png" alt="star" />
-              <img src="./images/Star.png" alt="star" />
-              <img src="./images/Star.png" alt="star" />
-              <img src="./images/Star-empty.png" alt="Empty star" />
-            </div>
-            <p class="testimonial-item-desc">
-              Product helps you see how many more days you need to work to reach
-              your financial goal.
+            <p class="price">
+              <span class="price-part">
+                0<sup class="price-part-dollar">$</sup>
+              </span>
+              Per / month
             </p>
-            <div class="testimonial-item-client">
-              <img src="./images/Ellipse-1.png" alt="avatar" />
-              <p class="testimonial-item-client-name">Wahid Ari</p>
-              <p class="testimonial-item-client-role">Designer</p>
-            </div>
-          </li>
-          <!--testimonial 2-->
-          <li class="testimonal-list-item">
-            <img src="./images/Star.png" alt="star" />
-            <img src="./images/Star.png" alt="star" />
-            <img src="./images/Star.png" alt="star" />
-            <img src="./images/Star.png" alt="star" />
-            <img src="./images/Star-empty.png" alt="avatar" />
-            <p class="testimonial-item-desc">
-              Product helps you see how many more days you need to work to reach
-              your financial goal.
-            </p>
-            <img src="./images/Ellipse-2.png" alt="Wahid Ari" />
-            <p class="testimonial-item-client-name">Wahid Ari</p>
-            <p class="testimonial-item-client-role">Designer</p>
-          </li>
-          <!--testimonial 3-->
-          <li class="testestimonal-list-item">
-            <img src="./images/Star.png" alt="star" />
-            <img src="./images/Star.png" alt="star" />
-            <img src="./images/Star.png" alt="star" />
-            <img src="./images/Star.png" alt="star" />
-            <img src="./images/Star-empty.png" alt="avatar" />
-            <p class="testimonial-item-desc">
-              Product helps you see how many more days you need to work to reach
-              your financial goal.
-            </p>
-            <img src="./images/Ellipse-3.png" alt="avatar" />
-            <p class="testimonial-item-client-name">Wahid Ari</p>
-            <p class="testimonial-item-client-role">Designer</p>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <!-- #endregion -->
 
-    <!-- #region Section 10 Promo -->
-    <section class="promo">
-      <div class="container">
-        <div class="promo-container">
-          <div class="promo-text-btn">
-            <h2 class="promo-title">
-              Join 100 Compannies who boost their business with Product
-            </h2>
-            <button type="promo-btn">
-              <a href="">Get This</a>
-            </button>
+            <p class="price-list-box-text">Only 2 Operators</p>
+            <p class="price-list-box-text">Notifications</p>
+            <p class="price-list-box-text">Landing Pages</p>
+            <a href="">
+              <button class="button price-button">Order Now</button>
+            </a>
           </div>
-          <img src="./images/screen.png" alt="screen" />
-        </div>
-      </div>
-    </section>
-    <!-- #endregion -->
+        </li>
 
-    <!-- #region Footer -->
-    <!-- <footer>
+        <li class="price-list-item">
+          <div class="price-list-item-box">
+            <h3 class="price-list-box-title">Standard</h3>
+            <p class="price-list-box-subtitle">Brief price description</p>
+
+            <p class="price">
+              <span class="price-part">
+                5<sup class="price-part-dollar">$</sup>
+              </span>
+              Per / month
+            </p>
+            <p class="price-list-box-text">5+ Operators</p>
+            <p class="price-list-box-text">Notifications</p>
+            <p class="price-list-box-text">Landing Pages</p>
+            <a href="">
+              <button class="button price-button">Order Now</button>
+            </a>
+          </div>
+        </li>
+        <li class="price-list-item">
+          <div class="price-list-item-box">
+            <h3 class="price-list-box-title">Premium</h3>
+            <p class="price-list-box-subtitle">Brief price description</p>
+
+            <p class="price">
+              <span class="price-part">
+                10<sup class="price-part-dollar">$</sup>
+              </span>
+              Per / month
+            </p>
+            <p class="price-list-box-text">10+ Operators</p>
+            <p class="price-list-box-text">Notifications</p>
+            <p class="price-list-box-text">Landing Pages</p>
+            <a href="">
+              <button class="button price-button">Order Now</button>
+            </a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <!-- #endregion -->
+
+  <!-- #region Section 9 client's feedback -->
+  <section class="testimonial-section">
+    <div class="container">
+      <h2 class="testimonial-title">What Clients Say</h2>
+      <p class="testimonial-desc">
+        Problems trying to resolve the conflict between the two major realms
+        of Classical physics: Newtonian mechanics
+      </p>
+      <ul class="testimonial-list">
+        <!--testimonial 1-->
+        <li class="testimonal-list-item">
+          <div class="testimonial-item-star">
+            <img src="./images/Star.png" alt="star" />
+            <img src="./images/Star.png" alt="star" />
+            <img src="./images/Star.png" alt="star" />
+            <img src="./images/Star.png" alt="star" />
+            <img src="./images/Star-empty.png" alt="Empty star" />
+          </div>
+          <p class="testimonial-item-desc">
+            Product helps you see how many more days you need to work to reach
+            your financial goal.
+          </p>
+          <div class="testimonial-item-client">
+            <img src="./images/Ellipse-1.png" alt="avatar" />
+            <p class="testimonial-item-client-name">Wahid Ari</p>
+            <p class="testimonial-item-client-role">Designer</p>
+          </div>
+        </li>
+        <!--testimonial 2-->
+        <li class="testimonal-list-item">
+          <img src="./images/Star.png" alt="star" />
+          <img src="./images/Star.png" alt="star" />
+          <img src="./images/Star.png" alt="star" />
+          <img src="./images/Star.png" alt="star" />
+          <img src="./images/Star-empty.png" alt="avatar" />
+          <p class="testimonial-item-desc">
+            Product helps you see how many more days you need to work to reach
+            your financial goal.
+          </p>
+          <img src="./images/Ellipse-2.png" alt="Wahid Ari" />
+          <p class="testimonial-item-client-name">Wahid Ari</p>
+          <p class="testimonial-item-client-role">Designer</p>
+        </li>
+        <!--testimonial 3-->
+        <li class="testestimonal-list-item">
+          <img src="./images/Star.png" alt="star" />
+          <img src="./images/Star.png" alt="star" />
+          <img src="./images/Star.png" alt="star" />
+          <img src="./images/Star.png" alt="star" />
+          <img src="./images/Star-empty.png" alt="avatar" />
+          <p class="testimonial-item-desc">
+            Product helps you see how many more days you need to work to reach
+            your financial goal.
+          </p>
+          <img src="./images/Ellipse-3.png" alt="avatar" />
+          <p class="testimonial-item-client-name">Wahid Ari</p>
+          <p class="testimonial-item-client-role">Designer</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <!-- #endregion -->
+
+  <!-- #region Section 10 Promo -->
+  <section class="promo">
+    <div class="container">
+      <div class="promo-container">
+        <div class="promo-text-btn">
+          <h2 class="promo-title">
+            Join 100 Compannies who boost their business with Product
+          </h2>
+          <button type="promo-btn">
+            <a href="">Get This</a>
+          </button>
+        </div>
+        <img src="./images/screen.png" alt="screen" />
+      </div>
+    </div>
+  </section>
+  <!-- #endregion -->
+
+  <!-- #region Footer -->
+  <!-- <footer>
       <div>
         <a href="./index.html">
           <img src="./images/logo.png" alt="logo" />
@@ -592,85 +528,60 @@
       <p>Made With Love By Figmaland All Right Reserved</p>
     </footer> -->
 
-    <footer>
-      <div class="container footer-container">
-        <div class="social-container">
-          <a class="footer-logo .logo" href="./index.html">
-            <img
-              src="./images/logo.svg"
-              alt="logo"
-              width="40"
-              height="36"
-            />Product</a
-          >
+  <footer>
+    <div class="container footer-container">
 
-          <ul class="footer-social-list">
-            <li class="footer-social-list-item">
-              <a href="https://www.instagram.com/" target="_blank"
-                ><img src="./images/item-inst.png" alt="Instagram"
-              /></a>
-            </li>
-            <li class="footer-social-list-item">
-              <a href="https://www.facebook.com/" target="_blank"
-                ><img src="./images/item-fc.png" alt="Facebook"
-              /></a>
-            </li>
-            <li class="footer-social-list-item">
-              <a href="https://x.com/" target="_blank"
-                ><img src="./images/item-tw.png" alt="Twitter"
-              /></a>
-            </li>
-          </ul>
-        </div>
+      <div class="social-container">
+        <a class="footer-logo .logo" href="./index.html">
+          <img src="./images/logo.svg" alt="logo" width="40" height="36" />Product</a>
 
-        <ul class="footer-resource-list">
-          <li><h3 class="footer-list-title">Resource</h3></li>
-          <li class="footer-resource-list-item">
-            <a href="#" target="_blank">About Us</a>
+        <ul class="footer-social-list">
+          <li class="footer-social-list-item">
+            <a href="https://www.instagram.com/" target="_blank"><img src="./images/item-inst.png"
+                alt="Instagram" /></a>
           </li>
-          <li class="footer-resource-list-item">
-            <a href="#" target="_blank">Blog</a>
+          <li class="footer-social-list-item">
+            <a href="https://www.facebook.com/" target="_blank"><img src="./images/item-fc.png" alt="Facebook" /></a>
           </li>
-          <li class="footer-resource-list-item">
-            <a href="#" target="_blank">Contact</a>
-          </li>
-          <li class="footer-resource-list-item">
-            <a href="#" target="_blank">FAQ</a>
+          <li class="footer-social-list-item">
+            <a href="https://x.com/" target="_blank"><img src="./images/item-tw.png" alt="Twitter" /></a>
           </li>
         </ul>
-
-        <ul class="footer-legal-list">
-          <li><h3 class="footer-list-title">Legal Stuff</h3></li>
-          <li class="footer-legal-list-item">
-            <a href="#" target="_blank">Disclaimer</a>
-          </li>
-          <li class="footer-legal-list-item">
-            <a href="#" target="_blank">Financing</a>
-          </li>
-          <li class="footer-legal-list-item">
-            <a href="#" target="_blank">Privacy Policy</a>
-          </li>
-        </ul>
-
-        <div class=".footer-input-box">
-          <h3 class="footer-list-title">
-            knowing you're always on the best energy deal.
-          </h3>
-          <!-- <img src="./images/mobile-screen.svg" alt="mobile icon"> -->
-          <input
-            class="footer-input"
-            type="tel"
-            name="phone"
-            placeholder="Enter your phone number"
-          />
-          <button class="footer-input-btn" type="button">Sign up Now</button>
-        </div>
-
-        <p class="footer-copyright">
-          Made With Love By Figmaland All Right Reserved
-        </p>
       </div>
-    </footer>
-    <!-- #endregion -->
-  </body>
+
+      <ul class="footer-resource-list">
+        <li>
+          <h3 class="footer-list-title">Resource</h3>
+        </li>
+        <li class="footer-resource-list-item"><a href="#" target="_blank">About Us</a></li>
+        <li class="footer-resource-list-item"><a href="#" target="_blank">Blog</a></li>
+        <li class="footer-resource-list-item"><a href="#" target="_blank">Contact</a></li>
+        <li class="footer-resource-list-item"><a href="#" target="_blank">FAQ</a></li>
+      </ul>
+
+      <ul class="footer-legal-list">
+        <li>
+          <h3 class="footer-list-title">Legal Stuff</h3>
+        </li>
+        <li class="footer-legal-list-item"><a href="#" target="_blank">Disclaimer</a></li>
+        <li class="footer-legal-list-item"><a href="#" target="_blank">Financing</a></li>
+        <li class="footer-legal-list-item"><a href="#" target="_blank">Privacy Policy</a></li>
+      </ul>
+
+      <div class=".footer-input-box">
+
+        <h3 class="footer-list-title">knowing you're always on the best energy deal.</h3>
+        <!-- <img src="./images/mobile-screen.svg" alt="mobile icon"> -->
+        <input class="footer-input" type="tel" name="phone" placeholder="Enter your phone number" />
+        <button class="footer-input-btn" type="button">Sign up Now</button>
+
+      </div>
+
+      <p class="footer-copyright">Made With Love By Figmaland All Right Reserved</p>
+    </div>
+  </footer>
+  <!-- #endregion -->
+
+</body>
+
 </html>

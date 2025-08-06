@@ -107,7 +107,6 @@ button {
   line-height: 0.93;
   color: var(--color-dark-blue2);
   text-transform: capitalize;
-  padding: 22px 0;
 }
 
 .header-menu {
@@ -117,16 +116,19 @@ button {
 }
 
 .header-menu-link {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.75;
   color: var(--color-dark-blue1);
   padding: 26px 0;
+  transition: text-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header-menu-link.current {
+  text-shadow: 0.6px 0px 0px #212121, -0.6px 0px 0px #212121;
 }
 
 .header-menu-link:hover,
 .header-menu-link:focus {
-  font-weight: 600;
+  text-shadow: 0.6px 0px 0px #212121, -0.6px 0px 0px #212121;
 }
 
 .header-reagister {
@@ -140,21 +142,31 @@ button {
   font-weight: 600;
   font-size: 16px;
   text-align: center;
-  color: var(--color-dark-blue2);
   cursor: pointer;
   padding: 9px 24.65px;
-}
-
-.sign-in {
-  border: 1px solid #bcd0e5;
   border-radius: 4px;
 }
 
-.sign-up {
+.header-register-btn.sign-in {
+  color: var(--color-dark-blue2);
+  border: 1px solid #bcd0e5;
+  background-color: transparent;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header-register-btn.sign-in:hover,
+.header-register-btn.sign-in:focus {
+  background-color: #bcd0e5;
+}
+
+.header-register-btn.sign-up {
   color: var(--color-white);
   background-color: var(--color-green);
-  border-radius: 4px;
   border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header-register-btn.sign-up:hover,
+.header-register-btn.sign-up:focus {
+  background-color: #01bfaa;
 }
 
 /* #endregion */
