@@ -14,7 +14,7 @@
   --color-red: #f03e3d;
   --color-white-cloud: #f5f5f5;
   --color-white: #fff;
-
+  --color-gray-border: #dedede;
   /*text color styles*/
   --color-black: #000;
   --color-dark-blue1: #22343d;
@@ -72,7 +72,6 @@ button {
 
 .container {
   max-width: 1150px;
-  width: 100%;
   padding: 0 20px;
   margin: 0 auto;
 }
@@ -759,7 +758,9 @@ h1 {
 
 /* #endregion */
 
-/* #region section 9 фідбек клієнтів */
+/* 
+        Price Table Section 8
+============================ */
 
 .price-title {
   font-size: 34px;
@@ -839,11 +840,93 @@ h1 {
 
 /* #endregion */
 
-/* #region section 9  Стилі для секції 9 - блок фідбек клієнтів */
-.client-block {
-  width: 327px;
-  height: 240px;
+/* 
+9-section  Clien's Testimonials 
+============================ */
+.testimonial-block {
+  width: 537px;
+  margin: 0 auto;
+  margin-bottom: 40px;
 }
+
+
+.testimonial-list {
+  /* display: block; */
+  display: flex;
+  margin: 0 auto;
+  gap: 64px;
+  margin-bottom: 100px;
+}
+
+.testimonial-title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.78;
+  letter-spacing: 0.01em;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.testimonal-list-item {
+  min-width: 327px;
+  min-height: 240px;
+  border: 1px solid var(--color-gray-border);
+  border-radius: 5px;
+  padding: 28px 26px;
+}
+
+.testimonial-item-desc {
+  color: var(--color-secondary-gray);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.75;
+  letter-spacing: 0.01em;
+  margin-bottom: 16px;
+
+}
+
+
+
+.testimonial-item-star {
+  display: flex;
+
+  margin-bottom: 16px;
+}
+
+.testimonial-desc {
+  text-align: center;
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.75;
+  letter-spacing: 0.01em;
+  text-align: center;
+}
+
+.testimonial-item-client img {
+  margin-right: 14px;
+}
+
+.testimonial-item-client {
+  display: flex;
+  align-items: center;
+}
+
+.client-name-role {}
+
+.testimonial-item-client-name {
+  color: var(--color-green);
+
+}
+
+.testimonial-item-client-role {
+  color: var(--c);
+
+}
+
+/* #endregion */
+
+/* #region section 10 */
 
 .call-to-action {
   height: 345px;
@@ -851,53 +934,34 @@ h1 {
   background-color: var(--color-green);
 }
 
-/* .testimonial-desc {} */
-
-/* .testimonial-list {} */
-
-.testimonal-list-item {
-  width: 327px;
-  height: 240px;
-}
-
-.testimonial-item-star {
-  display: flex;
-}
-
-.testimonial-item-desc {
-  color: var(--color-dark-purple);
-}
-
-.testimonial-item-client-name {
-  color: var(--color-green);
-}
-
-.testimonial-item-client-role {
-  color: var(--c);
-}
-
-/* #endregion */
-
-/* #region section 10 */
 .promo-container {
   display: flex;
   height: auto;
   max-width: 968px;
+  border-radius: 32px;
   margin: 0 auto;
   background-color: var(--color-green);
 }
 
 .promo-title {
   color: var(--color-white);
-  width: 65%;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.51;
+  width: 510px;
   margin-bottom: 46px;
   font-size: 32px;
 }
 
 .promo-btn {
   background-color: var(--color-white);
-  max-width: 150px;
+  border: none;
+  width: 150px;
   height: 50px;
+  border-radius: 8px;
+  color: var(--color-green);
+  font-weight: 600;
+  font-size: 20px;
 }
 
 .promo-text-btn {
