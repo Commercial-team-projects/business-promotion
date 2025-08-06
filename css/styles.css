@@ -14,7 +14,7 @@
   --color-red: #f03e3d;
   --color-white-cloud: #f5f5f5;
   --color-white: #fff;
-
+  --color-gray-border: #dedede;
   /*text color styles*/
   --color-black: #000;
   --color-dark-blue1: #22343d;
@@ -72,7 +72,6 @@ button {
 
 .container {
   max-width: 1150px;
-  width: 100%;
   padding: 0 20px;
   margin: 0 auto;
 }
@@ -747,8 +746,6 @@ h1 {
 
 /* #endregion */
 
-/* #region section 9 фідбек клієнтів */
-
 .price-title {
   font-size: 34px;
   text-align: center;
@@ -827,11 +824,75 @@ h1 {
 
 /* #endregion */
 
-/* #region section 9  Стилі для секції 9 - блок фідбек клієнтів */
-.client-block {
-  width: 327px;
-  height: 240px;
+/* 
+9-section  Clien's Testimonials 
+============================ */
+.testimonial-block {
+  width: 537px;
+  margin: 0 auto;
+  margin-bottom: 40px;
 }
+
+
+.testimonial-list {
+  margin: 0 auto;
+  display: flex;
+  gap: 64px;
+  margin-bottom: 100px;
+}
+
+.testimonial-title {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.testimonial-item-desc {
+  color: var(--color-secondary-gray);
+  margin-bottom: 16px;
+
+}
+
+.testimonal-list-item {
+  min-width: 327px;
+  min-height: 240px;
+  border: 1px solid var(--color-gray-border);
+  border-radius: 5px;
+  padding: 28px 26px;
+}
+
+
+.testimonial-item-star {
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.testimonial-desc {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.testimonial-item-client {
+  display: flex;
+  align-items: center;
+}
+
+.client-name-role {
+  margin-left: 14px;
+}
+
+.testimonial-item-client-name {
+  color: var(--color-green);
+
+}
+
+.testimonial-item-client-role {
+  color: var(--c);
+
+}
+
+/* #endregion */
+
+/* #region section 10 */
 
 .call-to-action {
   height: 345px;
@@ -839,34 +900,6 @@ h1 {
   background-color: var(--color-green);
 }
 
-/* .testimonial-desc {} */
-
-/* .testimonial-list {} */
-
-.testimonal-list-item {
-  width: 327px;
-  height: 240px;
-}
-
-.testimonial-item-star {
-  display: flex;
-}
-
-.testimonial-item-desc {
-  color: var(--color-dark-purple);
-}
-
-.testimonial-item-client-name {
-  color: var(--color-green);
-}
-
-.testimonial-item-client-role {
-  color: var(--c);
-}
-
-/* #endregion */
-
-/* #region section 10 */
 .promo-container {
   display: flex;
   height: auto;
