@@ -1,4 +1,4 @@
-/*global styles*/
+/* #region global styles */
 *,
 *::after,
 *::before {
@@ -32,9 +32,8 @@ body {
   font-family: "Poppins", sans-serif;
   color: #22343d;
   background-color: #fff;
-  width: 1440px;
-  margin: 0 auto;
 }
+
 h1,
 h2,
 h3,
@@ -44,9 +43,11 @@ h6 {
   margin: 0;
   padding: 0;
 }
+
 p {
   margin: 0;
 }
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -57,18 +58,11 @@ a {
   text-decoration: none;
   color: currentColor;
 }
+
 img {
   display: block;
   max-width: 100%;
   object-fit: cover;
-}
-
-/* COMMON  */
-.container {
-  max-width: 1150px;
-  width: 100%;
-  padding: 0 20px;
-  margin: 0 auto;
 }
 
 button {
@@ -76,29 +70,353 @@ button {
   font-family: inherit;
 }
 
-/*header*/
+.container {
+  max-width: 1150px;
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+}
 
-/*section 1*/
-/*section 2*/
-/*section 3*/
-/*section 4*/
-/*section 5*/
-/*section 6*/
+/* #endregion */
 
-/*SECTION STRATEGY*/
+/* #region header */
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 237px;
+}
+
+.container-logo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.header-logo {
+  padding: 22px 0;
+}
+
+.header-logo-text {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 0.93;
+  color: var(--color-dark-blue2);
+  text-transform: capitalize;
+  padding: 22px 0;
+}
+
+.header-menu {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.header-menu-link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.75;
+  color: var(--color-dark-blue1);
+  padding: 26px 0;
+}
+
+.header-menu-link:hover,
+.header-menu-link:focus {
+  font-weight: 600;
+}
+
+.header-reagister {
+  display: flex;
+  align-items: center;
+  gap: 21px;
+  margin-left: auto;
+}
+
+.header-register-btn {
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  color: var(--color-dark-blue2);
+  cursor: pointer;
+  padding: 9px 24.65px;
+}
+
+.sign-in {
+  border: 1px solid #bcd0e5;
+  border-radius: 4px;
+}
+
+.sign-up {
+  color: var(--color-white);
+  background-color: var(--color-green);
+  border-radius: 4px;
+  border: none;
+}
+
+/* #endregion */
+
+
+
+/* #region section 3 management */
+.managment {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.managment-container {
+  display: flex;
+  align-items: center;
+  gap: 84px;
+}
+
+.managment-content {
+  width: 486px;
+}
+
+.managment-title {
+  font-weight: 600;
+  font-size: 16px;
+  width: 224px;
+  margin-bottom: 25px;
+  line-height: 38px;
+}
+
+.managment-acent {
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.managment-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.63;
+  margin-bottom: 30px;
+}
+
+.managment-item-title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.625;
+  margin-bottom: 12px;
+}
+
+.managment-item-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.625;
+}
+
+.managment-list-item:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+/* #endregion management*/
+
+/* #region section 4 support */
+.support {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.support-container {
+  display: flex;
+  gap: 84px;
+  align-items: center;
+}
+
+.support-content {
+  margin-right: 35px;
+  width: 450px;
+}
+
+.support-title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 38px;
+  margin-bottom: 25px;
+  width: 304px;
+}
+
+.support-acent {
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.support-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.625;
+  margin-bottom: 30px;
+}
+
+.support-list-item:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.support-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 14px;
+  width: 35px;
+  height: 35px;
+  flex-shrink: 0;
+  /* щоб не зменшувалась ширина */
+}
+
+.support-list-item:nth-child(1) .support-icon-container {
+  background: #f90;
+}
+
+.support-list-item:nth-child(2) .support-icon-container {
+  background: #f03e3d;
+}
+
+.support-list-item:nth-child(3) .support-icon-container {
+  background: #4d8dff;
+}
+
+.support-list-item {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.support-item-icon {
+  fill: #fff;
+}
+
+.support-item-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.625;
+  color: #22343d;
+}
+
+.item-list {
+  padding-left: 0;
+}
+
+.text-item {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.625;
+  color: #22343d;
+}
+
+/* #endregion */
+
+/* #region section 5 */
+
+.collaboration {
+  width: 1110px;
+  height: 500px;
+}
+
+.li-heading {
+  list-style-type: none;
+}
+
+.li-item {
+  list-style-type: none;
+}
+
+.opti-text {
+  font-weight: 600;
+  font-size: 16px;
+  color: #22343d;
+}
+
+.text-heading {
+  font-weight: 700;
+  font-size: 32px;
+  color: #22343d;
+}
+
+.text-collaboration {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.625;
+  color: #22343d;
+}
+
+.item-list {
+  padding-left: 0;
+}
+
+.text-item {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.625;
+  color: #22343d;
+}
+
+/* #endregion */
+
+/* #region section 6 */
+
+.staff {
+  width: 916px;
+  height: 489px;
+}
+
+.staff-heading {
+  font-weight: 700;
+  font-size: 32px;
+  text-align: center;
+  color: #22343d;
+}
+
+.staff-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+  text-align: center;
+  color: #22343d;
+}
+
+.staff-service {
+  list-style-type: none;
+}
+
+.text-service {
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  color: #2f281e;
+}
+
+.service-button {
+  border-radius: 4px;
+  width: 216px;
+  height: 53px;
+  background: #02897a;
+  font-weight: 700;
+  font-size: 16px;
+  color: #fff;
+}
+
+/* #endregion */
+
+/* #region section 7 STRATEGY */
 
 .section-strategy {
   margin-top: 100px;
   margin-bottom: 170px;
 }
 
-.contents-strategy {
-}
+/* .contents-strategy {} */
 
 .strategy-title {
   font-size: 34px;
   margin-bottom: 10px;
 }
+
 .strategy-title-text {
   margin-bottom: 40px;
   font-weight: 500;
@@ -106,10 +424,12 @@ button {
   line-height: 1.63;
   max-width: 430px;
 }
+
 .strategy-list {
   display: flex;
   gap: 30px;
 }
+
 .strategy-list-item {
   width: calc((100% - 60px) / 3);
 }
@@ -129,9 +449,11 @@ button {
 .strategy-list-text {
   line-height: 1.75;
 }
+
 .strategy-list-text-part {
   font-weight: 700;
 }
+
 .strategy-list-name {
   max-width: 336px;
   font-size: 24px;
@@ -144,22 +466,27 @@ button {
   color: #02897a;
 }
 
-/*SECTION PRICE TABLE*/
+/* #endregion */
 
-.price-table {
-}
-.container {
-}
+/* #region section 8 PRICE TABLE */
+
+/* .price-table {} */
+
+/* .container {} */
+
 .price-table-container {
   text-align: center;
 }
+
 .price-table-title {
   font-size: 34px;
   margin-bottom: 10px;
 }
+
 .price-table-text {
   font-size: 16px;
 }
+
 .price-table-list {
   display: flex;
   margin-top: 40px;
@@ -167,6 +494,7 @@ button {
   gap: 72px;
   max-width: calc((100% - 144px) / 3);
 }
+
 .price-list-item {
   text-align: center;
 }
@@ -225,8 +553,8 @@ button {
   vertical-align: super;
 }
 
-.per-month {
-}
+/* .per-month {} */
+
 .price-list-item .price-button {
   display: block;
   margin: 0 auto;
@@ -265,20 +593,103 @@ button {
   color: #ffffff;
 }
 
-/*section 9*/
-/* Стилі для секції 9 - блок фідбек клієнтів */
+/* #endregion */
 
-.testimonial-section {
+/* #region section 9 фідбек клієнтів */
+
+.price-title {
+  font-size: 34px;
+  text-align: center;
 }
 
-.testimonial-title {
+.price-text {
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
 }
 
-.testimonial-desc {
+.price-list-standard:hover {
+  background-color: #02897a;
+  color: #ffffff;
 }
 
-.testimonial-list {
+.price-list-offer {
+  font-size: 24px;
+  line-height: 1.67;
 }
+
+.price-list-text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 2.5;
+}
+
+.price-list-rate {
+  font-size: 76px;
+  line-height: 1.32;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #02897a;
+}
+
+.price-list-standard:hover .price-list-rate {
+  color: #ffffff;
+}
+
+.price-list-access p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.38;
+  letter-spacing: 0.01em;
+}
+
+.price-list-rate>sup {
+  font-size: 24px;
+  line-height: 1.25;
+}
+
+.price-list-rate>span {
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.01em;
+  color: #afafaf;
+}
+
+.price-list-standard:hover .price-list-rate>span {
+  color: #e0e0e0;
+}
+
+.price-list-order {
+  background-color: #02897a;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff;
+}
+
+.price-list-standard:hover .price-list-order {
+  background-color: #ffffff;
+  color: #02897a;
+}
+
+/* #endregion */
+
+/* #region section 9  Стилі для секції 9 - блок фідбек клієнтів */
+.client-block {
+  width: 327px;
+  height: 240px;
+}
+
+.call-to-action {
+  height: 345px;
+  width: 968px;
+  background-color: var(--color-green);
+}
+
+/* .testimonial-desc {} */
+
+/* .testimonial-list {} */
 
 .testimonal-list-item {
   width: 327px;
@@ -301,22 +712,41 @@ button {
   color: var(--c);
 }
 
-/*section 10*/
-.promo-section {
-  height: 345px;
-  width: 968px;
+/* #endregion */
+
+/* #region section 10 */
+.promo-container {
+  display: flex;
+  height: auto;
+  max-width: 968px;
+  margin: 0 auto;
   background-color: var(--color-green);
 }
 
+.promo-title {
+  color: var(--color-white);
+  width: 65%;
+  margin-bottom: 46px;
+  font-size: 32px;
+}
+
 .promo-btn {
-  width: 150px;
+  background-color: var(--color-white);
+  max-width: 150px;
   height: 50px;
 }
 
-/* FOOTER */
-
-.container {
+.promo-text-btn {
+  padding-top: 49px;
+  padding-left: 51px;
+  padding-bottom: 56px;
 }
+
+/* #endregion */
+
+/* #region FOOTER */
+.container {}
+
 .footer-container {
   display: flex;
   flex-wrap: wrap;
@@ -324,6 +754,7 @@ button {
   gap: 60px;
   margin-top: 100px;
 }
+
 .footer-logo {
   display: flex;
   font-family: "Poppins", sans-serif;
@@ -340,10 +771,11 @@ button {
   display: flex;
   gap: 16px;
 }
-.footer-social-list-item {
-}
-.footer-resource-list {
-}
+
+.footer-social-list-item {}
+
+.footer-resource-list {}
+
 .footer-list-title {
   font-weight: 500;
   font-size: 20px;
@@ -355,12 +787,13 @@ button {
 .footer-resource-list-item {
   line-height: 2.19;
 }
-.footer-legal-list {
-}
+
+.footer-legal-list {}
 
 .footer-legal-list-item {
   line-height: 2.19;
 }
+
 .footer-input-box {
   align-items: center;
   display: flex;
@@ -396,9 +829,12 @@ button {
   color: #ffffff;
   border: none;
 }
+
 .footer-copyright {
   font-size: 16px;
   line-height: 1.86;
   max-width: 100%;
   margin: 0 auto;
 }
+
+/* #endregion */
