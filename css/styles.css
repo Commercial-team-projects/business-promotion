@@ -746,6 +746,10 @@ h1 {
 
 /* #endregion */
 
+/* 
+        Price Table Section 8
+============================ */
+
 .price-title {
   font-size: 34px;
   text-align: center;
@@ -835,21 +839,20 @@ h1 {
 
 
 .testimonial-list {
-  margin: 0 auto;
+  /* display: block; */
   display: flex;
+  margin: 0 auto;
   gap: 64px;
   margin-bottom: 100px;
 }
 
 .testimonial-title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.78;
+  letter-spacing: 0.01em;
   text-align: center;
   margin-bottom: 10px;
-}
-
-.testimonial-item-desc {
-  color: var(--color-secondary-gray);
-  margin-bottom: 16px;
-
 }
 
 .testimonal-list-item {
@@ -860,15 +863,36 @@ h1 {
   padding: 28px 26px;
 }
 
+.testimonial-item-desc {
+  color: var(--color-secondary-gray);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.75;
+  letter-spacing: 0.01em;
+  margin-bottom: 16px;
+
+}
+
+
 
 .testimonial-item-star {
   display: flex;
+
   margin-bottom: 16px;
 }
 
 .testimonial-desc {
   text-align: center;
   margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.75;
+  letter-spacing: 0.01em;
+  text-align: center;
+}
+
+.testimonial-item-client img {
+  margin-right: 14px;
 }
 
 .testimonial-item-client {
@@ -876,9 +900,7 @@ h1 {
   align-items: center;
 }
 
-.client-name-role {
-  margin-left: 14px;
-}
+.client-name-role {}
 
 .testimonial-item-client-name {
   color: var(--color-green);
