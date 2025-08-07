@@ -5,7 +5,23 @@
 /* #endregion */
 
 /* #region section 1 */
-.section {
+.hero-section .container {
+  margin-top: 100px;
+  margin-bottom: 117px;
+}
+
+.hero-title {
+  font-weight: 700;
+  font-size: 40px;
+  color: var(--color-dark-blue1);
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.clients-list {
+  display: flex;
+  gap: 64px;
+  justify-content: center;
 }
 
 /* #endregion */
