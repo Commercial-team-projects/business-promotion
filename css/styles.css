@@ -14,7 +14,7 @@
   --color-red: #f03e3d;
   --color-white-cloud: #f5f5f5;
   --color-white: #fff;
-
+  --color-gray-border: #dedede;
   /*text color styles*/
   --color-black: #000;
   --color-dark-blue1: #22343d;
@@ -72,7 +72,6 @@ button {
 
 .container {
   max-width: 1150px;
-  width: 100%;
   padding: 0 20px;
   margin: 0 auto;
 }
@@ -107,7 +106,6 @@ button {
   line-height: 0.93;
   color: var(--color-dark-blue2);
   text-transform: capitalize;
-  padding: 22px 0;
 }
 
 .header-menu {
@@ -117,16 +115,20 @@ button {
 }
 
 .header-menu-link {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.75;
   color: var(--color-dark-blue1);
   padding: 26px 0;
+  transition: text-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-menu-link.current {
+  text-shadow: 0.6px 0px 0px #212121, -0.6px 0px 0px #212121;
 }
 
 .header-menu-link:hover,
 .header-menu-link:focus {
-  font-weight: 600;
+  text-shadow: 0.6px 0px 0px #212121, -0.6px 0px 0px #212121;
 }
 
 .header-reagister {
@@ -140,21 +142,33 @@ button {
   font-weight: 600;
   font-size: 16px;
   text-align: center;
-  color: var(--color-dark-blue2);
   cursor: pointer;
   padding: 9px 24.65px;
-}
-
-.sign-in {
-  border: 1px solid #bcd0e5;
   border-radius: 4px;
 }
 
-.sign-up {
+.header-register-btn.sign-in {
+  color: var(--color-dark-blue2);
+  border: 1px solid #bcd0e5;
+  background-color: transparent;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-register-btn.sign-in:hover,
+.header-register-btn.sign-in:focus {
+  background-color: #bcd0e5;
+}
+
+.header-register-btn.sign-up {
   color: var(--color-white);
   background-color: var(--color-green);
-  border-radius: 4px;
   border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-register-btn.sign-up:hover,
+.header-register-btn.sign-up:focus {
+  background-color: #01bfaa;
 }
 
 /* #endregion */
@@ -642,6 +656,17 @@ h1 {
 
 .strategy-list-item {
   width: calc((100% - 60px) / 3);
+  transition: all 250ms ease-in-out;
+}
+
+.strategy-list-item:hover,
+.strategy-list-item:focus {
+  transform: scale(1.1);
+}
+
+.strategy-list-item:hover .strategy-list-name,
+.strategy-list-item:hover .strategy-list-name {
+  color: #02897a;
 }
 
 .strategy-list-imag {
@@ -668,12 +693,7 @@ h1 {
   max-width: 336px;
   font-size: 24px;
   line-height: 1.67;
-}
-
-.strategy-list-name-middle {
-  font-size: 24px;
-  line-height: 1.67;
-  color: #02897a;
+  transition: color 250ms ease-in-out;
 }
 
 /* #endregion */
@@ -805,114 +825,77 @@ h1 {
 
 /* #endregion */
 
-/* #region section 9 фідбек клієнтів */
 
-.price-title {
-  font-size: 34px;
-  text-align: center;
+
+/* 
+9-section  Clien's Testimonials 
+============================ */
+.testimonial-block {
+  width: 537px;
+  margin: 0 auto;
+  margin-bottom: 40px;
 }
 
-.price-text {
-  font-weight: 500;
-  font-size: 16px;
-  text-align: center;
+.testimonial-list {
+  /* display: block; */
+  display: flex;
+  margin: 0 auto;
+  gap: 64px;
+  margin-bottom: 100px;
 }
 
-.price-list-standard:hover {
-  background-color: #02897a;
-  color: #ffffff;
-}
-
-.price-list-offer {
-  font-size: 24px;
-  line-height: 1.67;
-}
-
-.price-list-text {
-  font-family: "Montserrat", sans-serif;
-  font-size: 16px;
-  line-height: 2.5;
-}
-
-.price-list-rate {
-  font-size: 76px;
-  line-height: 1.32;
-  letter-spacing: 0em;
-  text-align: center;
-  color: #02897a;
-}
-
-.price-list-standard:hover .price-list-rate {
-  color: #ffffff;
-}
-
-.price-list-access p {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.38;
+.testimonial-title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.78;
   letter-spacing: 0.01em;
+  text-align: center;
+  margin-bottom: 10px;
 }
-
-.price-list-rate>sup {
-  font-size: 24px;
-  line-height: 1.25;
-}
-
-.price-list-rate>span {
-  font-size: 16px;
-  line-height: 1.19;
-  letter-spacing: 0.01em;
-  color: #afafaf;
-}
-
-.price-list-standard:hover .price-list-rate>span {
-  color: #e0e0e0;
-}
-
-.price-list-order {
-  background-color: #02897a;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  font-size: 18px;
-  color: #fff;
-}
-
-.price-list-standard:hover .price-list-order {
-  background-color: #ffffff;
-  color: #02897a;
-}
-
-/* #endregion */
-
-/* #region section 9  Стилі для секції 9 - блок фідбек клієнтів */
-.client-block {
-  width: 327px;
-  height: 240px;
-}
-
-.call-to-action {
-  height: 345px;
-  width: 968px;
-  background-color: var(--color-green);
-}
-
-/* .testimonial-desc {} */
-
-/* .testimonial-list {} */
 
 .testimonal-list-item {
-  width: 327px;
-  height: 240px;
+  min-width: 327px;
+  min-height: 240px;
+  border: 1px solid var(--color-gray-border);
+  border-radius: 5px;
+  padding: 28px 26px;
+}
+
+.testimonial-item-desc {
+  color: var(--color-secondary-gray);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.75;
+  letter-spacing: 0.01em;
+  margin-bottom: 16px;
 }
 
 .testimonial-item-star {
   display: flex;
+
+  margin-bottom: 16px;
 }
 
-.testimonial-item-desc {
-  color: var(--color-dark-purple);
+.testimonial-desc {
+  text-align: center;
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.75;
+  letter-spacing: 0.01em;
+  text-align: center;
 }
+
+.testimonial-item-client img {
+  margin-right: 14px;
+}
+
+.testimonial-item-client {
+  display: flex;
+  align-items: center;
+}
+
+.client-name-role {}
 
 .testimonial-item-client-name {
   color: var(--color-green);
@@ -925,25 +908,41 @@ h1 {
 /* #endregion */
 
 /* #region section 10 */
+
+.call-to-action {
+  height: 345px;
+  width: 968px;
+  background-color: var(--color-green);
+}
+
 .promo-container {
   display: flex;
   height: auto;
   max-width: 968px;
+  border-radius: 32px;
   margin: 0 auto;
   background-color: var(--color-green);
 }
 
 .promo-title {
   color: var(--color-white);
-  width: 65%;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.51;
+  width: 510px;
   margin-bottom: 46px;
   font-size: 32px;
 }
 
 .promo-btn {
   background-color: var(--color-white);
-  max-width: 150px;
+  border: none;
+  width: 150px;
   height: 50px;
+  border-radius: 8px;
+  color: var(--color-green);
+  font-weight: 600;
+  font-size: 20px;
 }
 
 .promo-text-btn {
