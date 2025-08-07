@@ -121,6 +121,7 @@ button {
   padding: 26px 0;
   transition: text-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .header-menu-link.current {
   text-shadow: 0.6px 0px 0px #212121, -0.6px 0px 0px #212121;
 }
@@ -152,6 +153,7 @@ button {
   background-color: transparent;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .header-register-btn.sign-in:hover,
 .header-register-btn.sign-in:focus {
   background-color: #bcd0e5;
@@ -163,6 +165,7 @@ button {
   border: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .header-register-btn.sign-up:hover,
 .header-register-btn.sign-up:focus {
   background-color: #01bfaa;
@@ -764,87 +767,7 @@ h1 {
 
 /* #endregion */
 
-/* 
-        Price Table Section 8
-============================ */
 
-.price-title {
-  font-size: 34px;
-  text-align: center;
-}
-
-.price-text {
-  font-weight: 500;
-  font-size: 16px;
-  text-align: center;
-}
-
-.price-list-standard:hover {
-  background-color: #02897a;
-  color: #ffffff;
-}
-
-.price-list-offer {
-  font-size: 24px;
-  line-height: 1.67;
-}
-
-.price-list-text {
-  font-family: "Montserrat", sans-serif;
-  font-size: 16px;
-  line-height: 2.5;
-}
-
-.price-list-rate {
-  font-size: 76px;
-  line-height: 1.32;
-  letter-spacing: 0em;
-  text-align: center;
-  color: #02897a;
-}
-
-.price-list-standard:hover .price-list-rate {
-  color: #ffffff;
-}
-
-.price-list-access p {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.38;
-  letter-spacing: 0.01em;
-}
-
-.price-list-rate > sup {
-  font-size: 24px;
-  line-height: 1.25;
-}
-
-.price-list-rate > span {
-  font-size: 16px;
-  line-height: 1.19;
-  letter-spacing: 0.01em;
-  color: #afafaf;
-}
-
-.price-list-standard:hover .price-list-rate > span {
-  color: #e0e0e0;
-}
-
-.price-list-order {
-  background-color: #02897a;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  font-size: 18px;
-  color: #fff;
-}
-
-.price-list-standard:hover .price-list-order {
-  background-color: #ffffff;
-  color: #02897a;
-}
-
-/* #endregion */
 
 /* 
 9-section  Clien's Testimonials 
@@ -914,8 +837,7 @@ h1 {
   align-items: center;
 }
 
-.client-name-role {
-}
+.client-name-role {}
 
 .testimonial-item-client-name {
   color: var(--color-green);
@@ -974,8 +896,7 @@ h1 {
 /* #endregion */
 
 /* #region FOOTER */
-.container {
-}
+.container {}
 
 .footer-container {
   display: flex;
@@ -1002,11 +923,9 @@ h1 {
   gap: 16px;
 }
 
-.footer-social-list-item {
-}
+.footer-social-list-item {}
 
-.footer-resource-list {
-}
+.footer-resource-list {}
 
 .footer-list-title {
   font-weight: 500;
@@ -1020,8 +939,7 @@ h1 {
   line-height: 2.19;
 }
 
-.footer-legal-list {
-}
+.footer-legal-list {}
 
 .footer-legal-list-item {
   line-height: 2.19;
