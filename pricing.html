@@ -4,8 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Business promotion pricing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/pricing.css" />
   </head>
   <body>
+    <!-- #region Header -->
     <header>
       <a href="./index.html">
         <img
@@ -28,53 +41,69 @@
         <li><button type="button">Sign Up</button></li>
       </ul>
     </header>
+    <!-- #endregion -->
 
     <main>
-      <!--Let’s get some real work done here.-->
-      <section>
-        <p>PRICING</p>
-        <h1>Let’s get some real work done here.</h1>
-        <p>
-          Prodict is your perfect solution for working. Get started now for free
-        </p>
-        <ul>
-          <li>
-            <h3>Free</h3>
-            <p>
-              Brief price description <br />
-              0 $ Per / month <br />
-              Only 2 Operators <br />
-              Notifications <br />
-              Landing Pages
-            </p>
-            <button type="button">Order Now</button>
-          </li>
-          <li>
-            <h3>Standard</h3>
-            <p>
-              Brief price description <br />
-              5 $ Per / month <br />
-              5+ Operators <br />
-              Notifications <br />
-              Landing Pages
-            </p>
-            <button type="button">Order Now</button>
-          </li>
-          <li>
-            <h3>Premium</h3>
-            <p>
-              Brief price description <br />
-              10 $ Per / month <br />
-              Only 3 Operators <br />
-              Notifications <br />
-              Landing Pages
-            </p>
-            <button type="button">Order Now</button>
-          </li>
-        </ul>
+      <!-- #region Section 1 -->
+      <section class="pricing">
+        <div class="container">
+          <p class="pricing-txt">PRICING</p>
+          <h1 class="pricing-title">
+            Let&#x2019;s get some real work done here.
+          </h1>
+          <p class="pricing-text">
+            Product is your perfect solution for working. Get started now for
+            free.
+          </p>
+          <ul class="pricing-list">
+            <li class="pricing-list-item">
+              <h3 class="pricing-list-title">Free</h3>
+              <p class="pricing-list-description">Brief price description</p>
+              <p class="pricing-list-payment">
+                <span class="price">0<sup class="dollar">$</sup></span
+                >Per / month
+              </p>
+              <p class="pricing-list-text">Only 2 Operators</p>
+              <p class="pricing-list-text">Notifications</p>
+              <p class="pricing-list-text">Landing Pages</p>
+              <a href="#">
+                <button type="button" class="pricing-button">Order Now</button>
+              </a>
+            </li>
+            <li class="pricing-list-item">
+              <h3 class="pricing-list-title">Standard</h3>
+              <p class="pricing-list-description">Brief price description</p>
+              <p class="pricing-list-payment">
+                <span class="price">5<sup class="dollar">$</sup></span
+                >Per / month
+              </p>
+              <p class="pricing-list-text">5+ Operators</p>
+              <p class="pricing-list-text">Notifications</p>
+              <p class="pricing-list-text">Landing Pages</p>
+              <a href="#">
+                <button type="button" class="pricing-button">Order Now</button>
+              </a>
+            </li>
+            <li class="pricing-list-item">
+              <h3 class="pricing-list-title">Premium</h3>
+              <p class="pricing-list-description">Brief price description</p>
+              <p class="pricing-list-payment">
+                <span class="price">10<sup class="dollar">$</sup></span
+                >Per / month
+              </p>
+              <p class="pricing-list-text">Only 3 Operators</p>
+              <p class="pricing-list-text">Notifications</p>
+              <p class="pricing-list-text">Landing Pages</p>
+              <a href="#">
+                <button type="button" class="pricing-button">Order Now</button>
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
+      <!-- #endregion -->
 
-      <!--Are you interested  in a custom-tailored plan?-->
+      <!-- #region Section 2 - Are you interested  in a custom-tailored plan? -->
       <section>
         <p>ENTERPRISE</p>
         <h2>Are you interested in a custom-tailored plan?</h2>
@@ -84,8 +113,9 @@
         </p>
         <button type="button">Get in touch with us</button>
       </section>
+      <!-- #endregion -->
 
-      <!--Product is being used with great effects alongside:-->
+      <!-- #region Section 3 - Product is being used with great effects alongside: -->
       <section>
         <img src="./images/amico.png" alt="devices" width="528" height="392" />
         <ul>
@@ -115,8 +145,9 @@
           </li>
         </ul>
       </section>
+      <!-- #endregion -->
 
-      <!--Frequently asked question-->
+      <!-- #region Section 4 - Frequently asked question -->
       <section>
         <h2>Frequently asked question</h2>
         <p>Something is not clear? You need help? Check our FAQ section</p>
@@ -146,15 +177,18 @@
           </li>
         </ul>
       </section>
+      <!-- #endregion -->
 
-      <!--Join 100-->
+      <!-- #region Section 5 - Join 100 -->
       <section>
         <h2>Join 100 Compannies who boost their business with Product</h2>
         <button type="button">Get This</button>
         <img src="./images/graphics.png" alt="graphics" />
       </section>
+      <!-- #endregion -->
     </main>
 
+    <!-- #region Footer -->
     <footer>
       <a href="./index.html">
         <img
@@ -204,5 +238,6 @@
       </ul>
       <p>Made With Love By Figmaland All Right Reserved</p>
     </footer>
+    <!-- #endregion -->
   </body>
 </html>
