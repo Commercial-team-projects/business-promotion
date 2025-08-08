@@ -1,83 +1,3 @@
-/* #region global styles */
-*,
-*::after,
-*::before {
-  box-sizing: border-box;
-}
-
-/*global color styles*/
-:root {
-  /*bgm and accent color styles*/
-  --color-green: #02897a;
-  --color-blue: #4d8dff;
-  --color-purple: #740a76;
-  --color-red: #f03e3d;
-  --color-white-cloud: #f5f5f5;
-  --color-white: #fff;
-  --color-gray-border: #dedede;
-  /*text color styles*/
-  --color-black: #000;
-  --color-dark-blue1: #22343d;
-  --color-dark-blue2: #173a56;
-  --color-dark-brown: #2f281e;
-  --color-dark-purple: #252b42;
-  --color-dark-primary: #1f2e35;
-  --color-dark-secondary: #30444e;
-  --color-secondary-gray: #737373;
-  --color-gray: #475e69;
-  --color-white-light: #e4e9f3;
-}
-
-body {
-  font-family: "Poppins", sans-serif;
-  color: #22343d;
-  background-color: #fff;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-  padding: 0;
-}
-
-p {
-  margin: 0;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding-left: 0;
-}
-
-a {
-  text-decoration: none;
-  color: currentColor;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  object-fit: cover;
-}
-
-button {
-  cursor: pointer;
-  font-family: inherit;
-}
-
-.container {
-  max-width: 1150px;
-  padding: 0 20px;
-  margin: 0 auto;
-}
-
-/* #endregion */
-
 /* #region header */
 .header-container {
   display: flex;
@@ -190,8 +110,6 @@ button {
 /* #endregion */
 
 /* #region FOOTER */
-.container {
-}
 
 .footer-container {
   display: flex;
@@ -218,11 +136,9 @@ button {
   gap: 16px;
 }
 
-.footer-social-list-item {
-}
+.footer-social-list-item {}
 
-.footer-resource-list {
-}
+.footer-resource-list {}
 
 .footer-list-title {
   font-weight: 500;
@@ -236,8 +152,7 @@ button {
   line-height: 2.19;
 }
 
-.footer-legal-list {
-}
+.footer-legal-list {}
 
 .footer-legal-list-item {
   line-height: 2.19;
