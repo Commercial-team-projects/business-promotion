@@ -1,0 +1,42 @@
+/* <!-- #region Section 4 - Frequently asked question --> */
+.faq-title {
+  font-weight: 700;
+  font-size: 34px;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.faq-desc {
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.faq-list {
+  max-width: 920px;
+}
+
+/* .faq-item {
+  position: relative;
+} */
+
+.faq-item::before {
+  content: url("../images/icons.svg#icon-plus_circle");
+  display: inline-block;
+  /* background: url("../images/icons.svg#icon-plus_circle"); */
+  width: 24px;
+  height: 24px;
+  /* position: absolute; */
+}
+
+.faq-question {
+  font-weight: 500;
+  font-size: 18px;
+  padding-left: 40px;
+}
+
+.faq-answer {
+  font-size: 16px;
+}
+/* <!-- #endregion --> */
