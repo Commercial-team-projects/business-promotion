@@ -105,16 +105,43 @@
 <!-- #endregion -->
 
 <!-- #region Section 3 -->
-<section>
-    <h2>Contact Us</h2>
-    <p>Need more detailed information? 
-        Get in touch with us.</p>
-    <div>
-        <ul>
-            <li><a href="#">Instagram</a><img src="" alt=""></li>
-            <li><a href="#"></a>Facebook<img src="" alt=""></li>
-            <li><a href="#"></a>Twitter<img src="" alt=""></li>
-        </ul>
+<section class="contacts">
+    <div class="contact-container container">
+        <h2 class="contact-title">Contact Us</h2>
+        <p class="contact-desc">Need more detailed information? 
+            Get in touch with us.</p>
+        <div class="contact-social-cont">
+            <ul class="contact-social-list">
+                <li class="contact-social-item"><a class="contact-social-link" href="#"><svg class="contacts-icon" width="30" height="30" >
+                    <use href="./images/icons.svg#icon-instagram-1"></use>
+                </svg></a></li>
+                <li class="contact-social-item"><a class="contact-social-link" href="#"><svg class="contacts-icon" width="30" height="30">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                </svg></a></li>
+                <li class="contact-social-item"><a class="contact-social-link" href="#"><svg class="contacts-icon" width="30" height="30">
+                    <use href="./images/icons.svg#icon-twitter-1" ></use>
+                </svg></a></li>
+            </ul>
+        </div>
+    
+        <div class="contact-map-container">
+            <img src="./images/resources/map-screen-1x.jpg" alt="map-screen" srcset="./images/resources/map-screen-1x.jpg 1x, ./images/resources/map-screen-2x.jpg 2x" width="871" height="323">
+        </div>
+        <div class="contact-active">
+            <form class="contact-form">
+                <p class="form-title">Send a message</p>
+                <label class="form-label">
+                    <input type="text" class="form-input" name="user-name" placeholder="Your Name">
+                </label>
+                <label class="form-label">
+                    <input type="email" class="form-input" name="user-email" placeholder="Your Email">
+                </label>
+                <label class="form-label">
+                    <textarea type="text" class="form-input-ta" name="user-message" placeholder="Your Message"></textarea>
+                </label>
+                <button type="submit" class="contact-active-btn">Send</button>
+            </form>
+        </div>
     </div>
 </section>
 <!-- #endregion -->
