@@ -15,6 +15,7 @@
 
 .faq-list {
   max-width: 920px;
+  /* overflow: hidden; */
 }
 
 /* .faq-item {
@@ -22,8 +23,10 @@
 } */
 
 .faq-item::before {
-  content: url("../images/icons.svg#icon-plus_circle");
+  content: "";
+  /* content: url("../images/icons.svg#icon-plus_circle"); */
   display: inline-block;
+  background-color: greenyellow;
   /* background: url("../images/icons.svg#icon-plus_circle"); */
   width: 24px;
   height: 24px;
@@ -38,5 +41,15 @@
 
 .faq-answer {
   font-size: 16px;
+  display: none;
+  transition: display 1250ms ease-in-out;
+}
+
+.faq-item:hover::before {
+  background-color: aqua;
+}
+
+.faq-item:hover .faq-answer {
+  display: block;
 }
 /* <!-- #endregion --> */
