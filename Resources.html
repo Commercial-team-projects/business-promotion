@@ -105,16 +105,41 @@
 <!-- #endregion -->
 
 <!-- #region Section 3 -->
-<section>
-    <h2>Contact Us</h2>
-    <p>Need more detailed information? 
-        Get in touch with us.</p>
-    <div>
-        <ul>
-            <li><a href="#">Instagram</a><img src="" alt=""></li>
-            <li><a href="#"></a>Facebook<img src="" alt=""></li>
-            <li><a href="#"></a>Twitter<img src="" alt=""></li>
-        </ul>
+<section class="contacts">
+    <div class="contact-container container">
+        <h2 class="contact-title">Contact Us</h2>
+        <p class="contact-desc">Need more detailed information? 
+            Get in touch with us.</p>
+        <div class="contact-social-cont">
+            <ul class="contact-social-list">
+                <li class="contact-social-item"><a class="contact-social-link" href="#"><svg class="contacts-icon" width="30" height="30" >
+                    <use href="./images/icons.svg#icon-instagram-1"></use>
+                </svg></a></li>
+                <li class="contact-social-item"><a class="contact-social-link" href="#"><svg class="contacts-icon" width="30" height="30">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                </svg></a></li>
+                <li class="contact-social-item"><a class="contact-social-link" href="#"><svg class="contacts-icon" width="30" height="30">
+                    <use href="./images/icons.svg#icon-twitter-1" ></use>
+                </svg></a></li>
+            </ul>
+        </div>
+    
+        <iframe  class="contact-map-container" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6571.282925857295!2d-122.21148175435718!3d37.431774478925945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fa5b77c72d3ab%3A0x430b3c58bd5d0eb6!2z0J_QsNGA0Log0KjQsNGA0L7QvSDQpdC40LvRgQ!5e0!3m2!1sru!2sua!4v1754921283904!5m2!1sru!2sua" width="871" height="323" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="contact-active">
+            <form class="contact-form">
+                <p class="form-title">Send a message</p>
+                <label class="form-label">
+                    <input type="text" class="form-input" name="user-name" placeholder="Your Name">
+                </label>
+                <label class="form-label">
+                    <input type="email" class="form-input" name="user-email" placeholder="Your Email">
+                </label>
+                <label class="form-label">
+                    <textarea type="text" class="form-input-ta" name="user-message" placeholder="Your Message"></textarea>
+                </label>
+                <button type="submit" class="contact-active-btn">Send</button>
+            </form>
+        </div>
     </div>
 </section>
 <!-- #endregion -->
