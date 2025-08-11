@@ -11,6 +11,10 @@
       rel="stylesheet"
     />
     <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
     />
@@ -104,46 +108,77 @@
       <!-- #endregion -->
 
       <!-- #region Section 2 - Are you interested  in a custom-tailored plan? -->
-      <section>
-        <p>ENTERPRISE</p>
-        <h2>Are you interested in a custom-tailored plan?</h2>
-        <p>
-          Product is a set of advanced features for really large teams with
-          projects.
-        </p>
-        <button type="button">Get in touch with us</button>
+      <section class="enterprise">
+        <div class="container enterprise-container">
+          <p class="enterprise-word">enterprise</p>
+          <h2 class="enterprise-title">
+            Are you interested in a custom-tailored plan?
+          </h2>
+          <p class="enterprise-text">
+            Product is a set of advanced features for really large teams with
+            projects.
+          </p>
+          <button class="enterprise-btn" type="button">
+            Get in touch with us
+          </button>
+        </div>
       </section>
       <!-- #endregion -->
 
       <!-- #region Section 3 - Product is being used with great effects alongside: -->
-      <section>
-        <img src="./images/amico.png" alt="devices" width="528" height="392" />
-        <ul>
-          <li>
-            <img src="./images/Feature-icon.png" alt="Feature-icon" />
-            <h3>Enterpreneur</h3>
-            <p>
-              Product is a great way to help medium and samall enterprise owners
-              achieve their goals
-            </p>
-          </li>
-          <li>
-            <img src="./images/Feature-Icon2.png" alt="Feature-Icon2" />
-            <h3>Accountants</h3>
-            <p>
-              Whether you are working on contract with clients, or on other key
-              accounting documents, Product is for you
-            </p>
-          </li>
-          <li>
-            <img src="./images/Feature-Icon3.png" alt="Feature-Icon3" />
-            <h3>Universities</h3>
-            <p>
-              Organize university projects and have documents easily graded
-              online with Product
-            </p>
-          </li>
-        </ul>
+      <section class="effects">
+        <div class="container">
+          <h2 class="effects-title">
+            Product is being used with great effects alongside:
+          </h2>
+          <div class="effects-box">
+            <img
+              class="effects-box-image"
+              src="./images/amico.png"
+              alt="devices"
+              width="528"
+              height="392"
+            />
+            <ul class="effects-box-list">
+              <li class="effects-box-item">
+                <div class="effects-box-block">
+                  <svg class="effects-box-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-Enterpreneur">
+                  </svg>
+                  <h3 class="effects-box-title">Enterpreneur</h3>
+                </div>
+                <p class="effects-box-text">
+                  Product is a great way to help medium and samall enterprise
+                  owners achieve their goals
+                </p>
+              </li>
+              <li class="effects-box-item">
+                <div class="effects-box-block">
+                  <svg class="effects-box-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-Accountants">
+                  </svg>
+                  <h3 class="effects-box-title">Accountants</h3>
+                </div>
+                <p class="effects-box-text">
+                  Whether you are working on contract with clients, or on other
+                  key accounting documents, Product is for you
+                </p>
+              </li>
+              <li class="effects-box-item">
+                <div class="effects-box-block">
+                  <svg class="effects-box-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-Universities">
+                  </svg>
+                  <h3 class="effects-box-title">Universities</h3>
+                </div>
+                <p class="effects-box-text">
+                  Organize university projects and have documents easily graded
+                  online with Product
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
       </section>
       <!-- #endregion -->
 
