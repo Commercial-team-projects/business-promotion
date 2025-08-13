@@ -28,25 +28,27 @@
 }
 
 .faq-item::before {
-  background-color: greenyellow;
   display: inline-flex;
 
   content: "";
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/9/99/Leo.svg");
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0 12C0 5.376 5.376 0 12 0C18.624 0 24 5.376 24 12C24 18.624 18.624 24 12 24C5.376 24 0 18.624 0 12ZM13.2 13.2H18V10.8H13.2V6H10.8V10.8H6V13.2H10.8V18H13.2V13.2Z' fill='%2302897A'/%3E%3C/svg%3E%0A");
+  /* background-image: url("../images/icons-copy.svg#icon-plus-circle"); */
+  /* background-image: url("https://upload.wikimedia.org/wikipedia/commons/9/99/Leo.svg"); */
   background-size: 24px 24px;
   width: 24px;
   height: 24px;
 
-  /* content: url("../images/icons.svg#icon-plus_circle"); */
+  /* content: url("../images/icons-copy.svg#icon-plus-circle");
   /* width: 24px; */
-  /* height: 24px; */
+  /* height: 24px; */ */
 
   position: absolute;
 }
 
 .faq-item:hover::before {
-  background-color: aqua;
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/3/3a/Taurus.svg");
+  /* background-color: aqua; */
+  /* background-image: url("https://upload.wikimedia.org/wikipedia/commons/3/3a/Taurus.svg"); */
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0 12C0 5.376 5.376 0 12 0C18.624 0 24 5.376 24 12C24 18.624 18.624 24 12 24C5.376 24 0 18.624 0 12ZM6 13.2H18V10.8H6V13.2Z' fill='%2302897A' /%3E%3C/svg%3E");
 }
 
 .faq-item::after {
