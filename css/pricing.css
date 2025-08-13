@@ -1,4 +1,8 @@
 /* <!-- #region Section 4 - Frequently asked question --> */
+.faq-section .container {
+  margin-bottom: 150px;
+}
+
 .faq-title {
   font-weight: 700;
   font-size: 34px;
@@ -18,25 +22,53 @@
   /* overflow: hidden; */
 }
 
-/* .faq-item {
+.faq-item {
   position: relative;
-} */
+  margin-bottom: 16px;
+}
 
 .faq-item::before {
-  content: "";
-  /* content: url("../images/icons.svg#icon-plus_circle"); */
-  display: inline-block;
   background-color: greenyellow;
-  /* background: url("../images/icons.svg#icon-plus_circle"); */
+  display: inline-flex;
+
+  content: "";
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/9/99/Leo.svg");
+  background-size: 24px 24px;
   width: 24px;
   height: 24px;
-  /* position: absolute; */
+
+  /* content: url("../images/icons.svg#icon-plus_circle"); */
+  /* width: 24px; */
+  /* height: 24px; */
+
+  position: absolute;
+}
+
+.faq-item:hover::before {
+  background-color: aqua;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/3/3a/Taurus.svg");
+}
+
+.faq-item::after {
+  content: "";
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #e7e7e7;
+}
+
+.faq-item:last-child::after {
+  content: none;
 }
 
 .faq-question {
   font-weight: 500;
   font-size: 18px;
   padding-left: 40px;
+  padding-bottom: 24px;
 }
 
 .faq-answer {
@@ -45,8 +77,13 @@
   transition: display 1250ms ease-in-out;
 }
 
-.faq-item:hover::before {
-  background-color: aqua;
+.faq-item:hover {
+  padding-bottom: 24px;
+}
+
+.faq-item:hover .faq-question {
+  display: block;
+  padding-bottom: 16px;
 }
 
 .faq-item:hover .faq-answer {
