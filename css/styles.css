@@ -363,22 +363,31 @@ h1 {
   margin-bottom: 30px;
 }
 
+/* .managment-list {
+} */
+
+/* .managment-list-item {
+} */
+
 .managment-item-title {
   font-weight: 600;
   font-size: 16px;
-  line-height: 1.625;
+  line-height: 1.63;
   margin-bottom: 12px;
 }
 
 .managment-item-text {
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.625;
+  line-height: 1.63;
 }
 
 .managment-list-item:not(:last-child) {
   margin-bottom: 40px;
 }
+
+/* .menagment-image {
+} */
 
 /* #endregion management*/
 
@@ -415,7 +424,7 @@ h1 {
 .support-text {
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.625;
+  line-height: 1.63;
   margin-bottom: 30px;
 }
 
@@ -460,7 +469,7 @@ h1 {
 .support-item-text {
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.625;
+  line-height: 1.63;
   color: #22343d;
 }
 
@@ -471,7 +480,7 @@ h1 {
 .text-item {
   font-weight: 600;
   font-size: 16px;
-  line-height: 1.625;
+  line-height: 1.63;
   color: #22343d;
 }
 
@@ -828,6 +837,8 @@ h1 {
 /* 
 9-section  Clien's Testimonials 
 ============================ */
+
+/* #region section 9 Clien's Testimonials */
 .testimonial-block {
   width: 537px;
   margin: 0 auto;
