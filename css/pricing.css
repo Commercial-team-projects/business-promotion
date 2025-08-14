@@ -236,3 +236,94 @@
 }
 
 /* #endregion */
+
+/* <!-- #region Section 4 - Frequently asked question --> */
+.faq-section .container {
+  margin-bottom: 150px;
+}
+
+.faq-title {
+  font-weight: 700;
+  font-size: 34px;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.faq-desc {
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.faq-list {
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.faq-item::before {
+  display: inline-block;
+
+  content: "";
+  /* background-image: url("../images/icons.svg#icon-plus_circle"); */
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0 12C0 5.376 5.376 0 12 0C18.624 0 24 5.376 24 12C24 18.624 18.624 24 12 24C5.376 24 0 18.624 0 12ZM13.2 13.2H18V10.8H13.2V6H10.8V10.8H6V13.2H10.8V18H13.2V13.2Z' fill='%2302897A'/%3E%3C/svg%3E%0A");
+  background-size: 24px 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+
+  position: absolute;
+}
+
+.faq-item:hover::before {
+  /* background-image: url("../images/icons.svg#icon-minus_circle"); */
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0 12C0 5.376 5.376 0 12 0C18.624 0 24 5.376 24 12C24 18.624 18.624 24 12 24C5.376 24 0 18.624 0 12ZM6 13.2H18V10.8H6V13.2Z' fill='%2302897A' /%3E%3C/svg%3E");
+}
+
+.faq-item::after {
+  content: "";
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #e7e7e7;
+}
+
+.faq-item:last-child::after {
+  content: none;
+}
+
+.faq-question {
+  font-weight: 500;
+  font-size: 18px;
+  padding-left: 40px;
+  padding-bottom: 24px;
+}
+
+.faq-answer {
+  font-size: 16px;
+  display: none;
+  transition: display 1250ms ease-in-out;
+}
+
+.faq-item:hover {
+  padding-bottom: 24px;
+}
+
+.faq-item:hover .faq-question {
+  display: block;
+  padding-bottom: 16px;
+}
+
+.faq-item:hover .faq-answer {
+  display: block;
+}
+/* <!-- #endregion --> */
