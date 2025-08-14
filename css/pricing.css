@@ -235,7 +235,9 @@
   line-height: 1.75;
 }
 
-/* #endregion */ /* <!-- #region Section 4 - Frequently asked question --> */
+/* #endregion */
+
+/* <!-- #region Section 4 - Frequently asked question --> */
 .faq-section .container {
   margin-bottom: 150px;
 }
