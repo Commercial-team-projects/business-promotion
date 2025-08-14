@@ -64,6 +64,7 @@
   align-items: center;
   margin-bottom: 32px;
   justify-self: center;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
 .bg-green {
@@ -78,9 +79,8 @@
   background-color: var(--color-red);
 }
 
-.reasons-item-img {
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-}
+/* .reasons-item-img {
+} */
 
 .reasons-item-title {
   font-weight: 700;
