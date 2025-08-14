@@ -1,29 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Customers</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
-    />
-    <link rel="stylesheet" href="./css/global.css" />
-    <link rel="stylesheet" href="./css/customers.css" />
-  </head>
 
-  <body>
-    <header></header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Customers</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css" />
+  <link rel="stylesheet" href="./css/customers.css" />
+  <link rel="stylesheet" href="./css/global.css" />
+</head>
+
+<body>
+  
+  <!-- #region Header -->
+  <header class="header-page">
+    <div class="container header-container">
+      <nav class="header-nav">
+        <a class="header-logo" href="./index.html">
+          <div class="container-logo">
+            <svg class="header-logo-icon" width="40" height="36">
+              <use href="./images/icons.svg#icon-logo">
+            </svg>
+            <span class="header-logo-text">product</span>
+          </div>
+        </a>
+        <ul class="header-menu">
+          <li class="header-menu-item"><a class="header-menu-link" href="./index.html">Product</a></li>
+          <li class="header-menu-item"><a class="header-menu-link" href="./pricing.html">Pricing</a></li>
+          <li class="header-menu-item"><a class="header-menu-link current" href="./customers.html">Customers</a></li>
+          <li class="header-menu-item"><a class="header-menu-link" href="./resources.html">Resources</a></li>
+        </ul>
+      </nav>
+      <ul class="header-reagister">
+        <li class="header-register-item"><button class="header-register-btn sign-in" type="button">Sign In</button></li>
+        <li class="header-register-item"><button class="header-register-btn sign-up" type="button">Sign Up</button></li>
+      </ul>
+    </div>
+  </header>
+  <!-- #endregion -->
     <main>
       <!-- #region section 1 -->
       <section class="hero-section">
@@ -62,11 +79,9 @@
           <ul class="reasons-list">
             <li class="reasons-item">
               <div class="reasons-item-img-container bg-green">
-                <img
-                  class="reasons-item-img"
-                  src="./images/feature-pointer-icon.png"
-                  alt="Pointer icon"
-                />
+                <svg class="reasons-item-img" width="18" height="18">
+                  <use href="./images/icons.svg#icon-arrow" />
+                </svg>
               </div>
               <h3 class="reasons-item-title">Special Business</h3>
               <p class="reasons-item-text">
@@ -76,11 +91,9 @@
             </li>
             <li class="reasons-item">
               <div class="reasons-item-img-container bg-blue">
-                <img
-                  class="reasons-item-img"
-                  src="./images/feature-survey-icon.png"
-                  alt="Survey icon"
-                />
+                <svg class="reasons-item-img" width="18" height="18">
+                  <use href="./images/icons.svg#icon-wave" />
+                </svg>
               </div>
               <h3 class="reasons-item-title">Instant Result</h3>
               <p class="reasons-item-text">
@@ -90,11 +103,9 @@
             </li>
             <li class="reasons-item">
               <div class="reasons-item-img-container bg-red">
-                <img
-                  class="reasons-item-img"
-                  src="./images/feature-like-icon.png"
-                  alt="Heart icon"
-                />
+                <svg class="reasons-item-img" width="18" height="18">
+                  <use href="./images/icons.svg#icon-heart" />
+                </svg>
               </div>
               <h3 class="reasons-item-title">Fastest way to organize</h3>
               <p class="reasons-item-text">
@@ -186,6 +197,60 @@
       </section>
       <!-- #endregion -->
     </main>
-    <footer></footer>
+      <!-- #region Footer -->
+
+  <footer>
+    <div class="container footer-container">
+
+      <div class="social-container">
+        <a class="footer-logo .logo" href="./index.html">
+          <img src="./images/logo.svg" alt="logo" width="40" height="36" />Product</a>
+
+        <ul class="footer-social-list">
+          <li class="footer-social-list-item">
+            <a href="https://www.instagram.com/" target="_blank"><img src="./images/item-inst.png"
+                alt="Instagram" /></a>
+          </li>
+          <li class="footer-social-list-item">
+            <a href="https://www.facebook.com/" target="_blank"><img src="./images/item-fc.png" alt="Facebook" /></a>
+          </li>
+          <li class="footer-social-list-item">
+            <a href="https://x.com/" target="_blank"><img src="./images/item-tw.png" alt="Twitter" /></a>
+          </li>
+        </ul>
+      </div>
+
+      <ul class="footer-resource-list">
+        <li>
+          <h3 class="footer-list-title">Resource</h3>
+        </li>
+        <li class="footer-resource-list-item"><a href="#" target="_blank">About Us</a></li>
+        <li class="footer-resource-list-item"><a href="#" target="_blank">Blog</a></li>
+        <li class="footer-resource-list-item"><a href="#" target="_blank">Contact</a></li>
+        <li class="footer-resource-list-item"><a href="#" target="_blank">FAQ</a></li>
+      </ul>
+
+      <ul class="footer-legal-list">
+        <li>
+          <h3 class="footer-list-title">Legal Stuff</h3>
+        </li>
+        <li class="footer-legal-list-item"><a href="#" target="_blank">Disclaimer</a></li>
+        <li class="footer-legal-list-item"><a href="#" target="_blank">Financing</a></li>
+        <li class="footer-legal-list-item"><a href="#" target="_blank">Privacy Policy</a></li>
+      </ul>
+
+      <div class=".footer-input-box">
+
+        <h3 class="footer-list-title">knowing you're always on the best energy deal.</h3>
+        <!-- <img src="./images/mobile-screen.svg" alt="mobile icon"> -->
+        <input class="footer-input" type="tel" name="phone" placeholder="Enter your phone number" />
+        <button class="footer-input-btn" type="button">Sign up Now</button>
+
+      </div>
+
+      <p class="footer-copyright">Made With Love By Figmaland All Right Reserved</p>
+    </div>
+  </footer>
+  <!-- #endregion -->
   </body>
 </html>
