@@ -297,10 +297,10 @@ h1 {
 .bg-red {
   background-color: var(--color-red);
 }
-
+/* 
 .feature-item-img {
   height: 18px;
-}
+} */
 
 .feature-item-title {
   font-weight: 600;
@@ -834,6 +834,10 @@ h1 {
 
 /* #endregion */
 
+/* 
+9-section  Clien's Testimonials 
+============================ */
+
 /* #region section 9 Clien's Testimonials */
 .testimonial-block {
   width: 537px;
@@ -900,7 +904,8 @@ h1 {
   align-items: center;
 }
 
-.client-name-role {}
+.client-name-role {
+}
 
 .testimonial-item-client-name {
   color: var(--color-green);
@@ -959,7 +964,8 @@ h1 {
 /* #endregion */
 
 /* #region FOOTER */
-.container {}
+.container {
+}
 
 .footer-container {
   display: flex;
@@ -986,9 +992,11 @@ h1 {
   gap: 16px;
 }
 
-.footer-social-list-item {}
+.footer-social-list-item {
+}
 
-.footer-resource-list {}
+.footer-resource-list {
+}
 
 .footer-list-title {
   font-weight: 500;
@@ -1002,7 +1010,8 @@ h1 {
   line-height: 2.19;
 }
 
-.footer-legal-list {}
+.footer-legal-list {
+}
 
 .footer-legal-list-item {
   line-height: 2.19;
