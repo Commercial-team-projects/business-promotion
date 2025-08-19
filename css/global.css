@@ -72,10 +72,17 @@ button {
 }
 
 .container {
-  max-width: 1150px;
-  padding: 0 20px;
+  width: 411px;
   margin: 0 auto;
+  padding: 0 20px;
 }
+
+@media (min-width: 1150px) {
+  .container {
+    width: 1150px;
+  }
+}
+
 
 /* #endregion */
 
