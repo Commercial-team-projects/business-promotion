@@ -25,6 +25,11 @@
             <span class="header-logo-text">product</span>
           </div>
         </a>
+
+        <button class="mob-menu-btn" type="button" data-mobile-open>
+          <img class="mob-menu-icon" src="./images/menu.svg" alt="mob menu button">
+        </button>
+
         <ul class="header-menu">
           <li class="header-menu-item"><a class="header-menu-link current" href="./index.html">Product</a></li>
           <li class="header-menu-item"><a class="header-menu-link" href="./pricing.html">Pricing</a></li>
@@ -37,6 +42,29 @@
         <li class="header-register-item"><button class="header-register-btn sign-up" type="button">Sign Up</button></li>
       </ul>
     </div>
+
+    <div class="menu-overlay" data-mobile>
+      <div class="container mob-container">
+        <button class="menu-close-btn" type="button" data-mobile-close>
+          <svg class="" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-modal"></use>
+          </svg>
+        </button>
+        <nav class="mob-menu">
+          <ul class="mob-menu-list">
+            <li class="mob-menu-item"><a class="mob-menu-link current" href="./index.html">Product</a></li>
+            <li class="mob-menu-item"><a class="mob-menu-link" href="./pricing.html">Pricing</a></li>
+            <li class="mob-menu-item"><a class="mob-menu-link" href="./customers.html">Customers</a></li>
+            <li class="mob-menu-item"><a class="mob-menu-link" href="./resources.html">Resources</a></li>
+          </ul>
+        </nav>
+        <ul class="mob-reg-list">
+          <li class="mob-reg-item"><button class="mob-reg-btn sign-in" type="button">Sign In</button></li>
+          <li class="mob-reg-item"><button class="mob-reg-btn sign-up" type="button">Sign Up</button></li>
+        </ul>
+      </div>
+    </div>
+
   </header>
 
   <!-- #endregion -->
@@ -584,6 +612,7 @@
   </footer>
   <!-- #endregion -->
 
+  <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
