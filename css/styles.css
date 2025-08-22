@@ -248,12 +248,12 @@ h1 {
 
   color: var(--color-dark-blue1);
 
-  margin-bottom: 138px;
+  padding-bottom: 138px;
 }
 
 @media (min-width: 1150px) {
   .features-section .container {
-    margin-bottom: 100px;
+    padding-bottom: 100px;
   }
 }
 
