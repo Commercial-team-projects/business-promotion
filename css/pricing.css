@@ -239,7 +239,7 @@
 
 /* <!-- #region Section 4 - Frequently asked question --> */
 .faq-section .container {
-  margin-bottom: 150px;
+  padding-bottom: 150px;
 }
 
 .faq-title {
