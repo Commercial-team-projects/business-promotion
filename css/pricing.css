@@ -189,26 +189,31 @@
 
 /* #region section-3 great effects */
 .effects {
-  padding-top: 150px;
+  padding: 50px 0;
   background-color: var(--color-white);
 }
 
+.container.effects-container {
+  padding: 0 31px;
+}
+
 .effects-title {
-  font-size: 34px;
+  font-size: 32px;
+  margin-bottom: 33px;
   text-align: center;
-  margin-bottom: 56px;
 }
 
 .effects-box {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 60px;
+  gap: 32px;
 }
 
 .effects-box-list {
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 24px;
 }
 
 .effects-box-block {
@@ -234,6 +239,31 @@
   font-size: 16px;
   line-height: 1.75;
 }
+
+@media (min-width: 1150px) {
+  .effects {
+    padding: 150px 0;
+  }
+
+  .container.effects-container {
+    padding: 0 20px;
+  }
+
+  .effects-title {
+    font-size: 34px;
+    margin-bottom: 56px;
+  }
+
+  .effects-box {
+    flex-direction: row;
+    gap: 60px;
+  }
+
+  .effects-box-list {
+    gap: 32px;
+  }
+}
+
 
 /* #endregion */
 
@@ -326,4 +356,5 @@
 .faq-item:hover .faq-answer {
   display: block;
 }
+
 /* <!-- #endregion --> */
