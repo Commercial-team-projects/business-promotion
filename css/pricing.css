@@ -211,6 +211,8 @@
   gap: 32px;
 }
 
+@media (min-width: 1150px) {}
+
 .effects-box-block {
   display: flex;
   align-items: center;
@@ -326,4 +328,5 @@
 .faq-item:hover .faq-answer {
   display: block;
 }
+
 /* <!-- #endregion --> */

@@ -302,7 +302,7 @@ h1 {
   margin-bottom: 16px;
 }
 
-@media (min-width:1400px) {
+@media (min-width:1150px) {
   .container.managment-container {
     flex-direction: row;
     align-items: center;
@@ -419,7 +419,7 @@ h1 {
   color: #22343d;
 }
 
-@media (min-width:1400px) {
+@media (min-width:1150px) {
   .container.support-container {
     flex-direction: row;
     gap: 84px;
