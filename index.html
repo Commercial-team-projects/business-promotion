@@ -193,7 +193,7 @@
 
   <!-- #region Section 5 -->
   <section class="collaboration">
-    <div class="collaboration-container">
+    <div class="container collaboration-container">
       <div class="collaboration-text">
         <p class="opti-text">Optimisation for</p>
         <h2 class="text-heading">Collaborative</h2>
@@ -219,7 +219,11 @@
           </li>
         </ul>
       </div>
-      <img src="./images/collaboration-img.png" alt="File folders and boxes" width="540" height="500" />
+      <picture>
+        <source media="(min-width: 1150px)" srcset="./images/section-5/collaboration-desktop-img-min.png 1x, ./images/section-5/collaboration-desktop-img@2x-min.png 2x" />
+        <source media="(min-width: 400px)" srcset="./images/section-5/collaboration-mobile-img-min.png 1x, ./images/section-5/collaboration-mobile-img@2x-min.png 2x" width="350" height="292"/>
+        <img src="./images/section-5/collaboration-desktop-img-min.png" alt="File folders and boxes" width="540" height="500" />
+      </picture>
     </div>
   </section>
   <!-- #endregion -->
@@ -229,24 +233,23 @@
     <div class="container process-container">
       <h2 class="process-title">Quick & Easy Process</h2>
       <p class="process-text">
-        Do you require some help for your project: Conception workshop,
-        marketing strategy, landing page, UX/UI?
+        Do you require some help for your project: Conception workshop, prototyping, marketing strategy, landing page, UX/UI?
       </p>
       <ul class="process-list">
         <li class="process-list-item">
-          <img src="./images/avatar.png" alt="Young woman" width="98" height="98" />
+          <img srcset="./images/section-6/avatar.png 1x, ./images/section-6/avatarx2.png 2x" src="./images/section-6/avatar.png" alt="Young woman" width="98" height="98" />
           <p class="process-item-text">I can take care of your pitch</p>
         </li>
         <li class="process-list-item">
           <p class="process-item-text">I can prototype your app</p>
-          <img src="./images/avatar-2.png" alt="Old woman" width="98" height="98" />
+          <img srcset="./images/section-6/avatar-2.png 1x, ./images/section-6/avatar-2x2.png 2x" src="./images/section-6/avatar-2.png" alt="Old woman" width="98" height="98" />
         </li>
         <li class="process-list-item">
-          <p class="process-item-text">I can take care of your pitch</p>
-          <img src="./images/avatar-1.png" alt="Young boy" width="98" height="98" />
+          <p class="process-item-text">I can design you website</p>
+          <img srcset="./images/section-6/avatar-1.png 1x, ./images/section-6/avatar-1x2.png 2x" src="./images/section-6/avatar-1.png" alt="Young boy" width="98" height="98" />
         </li>
         <li class="process-list-item">
-          <img src="./images/avatar-3.png" alt="Old man" width="98" height="98" />
+          <img srcset="./images/section-6/avatar-3.png 1x, ./images/section-6/avatar-3x2.png 2x" src="./images/section-6/avatar-3.png" alt="Old man" width="98" height="98" />
           <p class="process-item-text">I can help marketing strategy</p>
         </li>
       </ul>
