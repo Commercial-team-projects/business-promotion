@@ -1,7 +1,6 @@
 /* #region Section 1 Pricing */
-
 .pricing {
-  padding: 50px 0 150px 0;
+  padding: 50px 0 100px 0;
   text-align: center;
 }
 
@@ -9,16 +8,16 @@
   font-weight: 600;
   font-size: 24px;
   color: var(--color-dark-blue1);
-  margin-bottom: 32px;
+  margin-bottom: 30px;
   text-transform: uppercase;
 }
 
 .pricing-title {
   font-weight: 700;
-  font-size: 40px;
+  font-size: 36px;
   text-align: center;
   color: var(--color-dark-blue1);
-  margin-bottom: 16px;
+  margin-bottom: 18px;
 }
 
 .pricing-text {
@@ -26,14 +25,15 @@
   font-size: 16px;
   text-align: center;
   color: var(--color-dark-blue1);
-  margin-bottom: 49px;
+  margin-bottom: 50px;
 }
 
 .pricing-list {
   display: flex;
   margin: 0 auto;
-  justify-content: space-between;
   align-items: center;
+  flex-direction: column;
+  gap: 32px;
 }
 
 .pricing-list-item {
@@ -42,10 +42,10 @@
   align-items: center;
   width: 322px;
   height: 456px;
-  max-width: calc((100% - 2 * 72px) / 3);
   box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.25);
   border-radius: 8px;
   transition: box-shadow 500ms ease-in-out, background-color 500ms ease-in-out;
+  padding: 24px 0 32px 0;
 }
 
 .pricing-list-title {
@@ -53,7 +53,6 @@
   font-size: 24px;
   line-height: 1.67;
   color: var(--color-dark-blue1);
-  margin: 24px 0 8px 0;
 }
 
 .pricing-list-description {
@@ -64,6 +63,15 @@
   margin-bottom: 16px;
 }
 
+.pricing-list-payment {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.01em;
+  color: #afafaf;
+  margin-bottom: 16px;
+}
+
 .pricing-list-text {
   font-family: "Inter", sans-serif;
   font-weight: 500;
@@ -71,15 +79,6 @@
   line-height: 1.38;
   letter-spacing: 0.01em;
   color: var(--color-dark-blue1);
-  margin-bottom: 16px;
-}
-
-.pricing-list-payment {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.19;
-  letter-spacing: 0.01em;
-  color: #afafaf;
   margin-bottom: 16px;
 }
 
@@ -110,7 +109,7 @@
 .pricing-button {
   display: block;
   margin-top: 22px;
-  padding: 11px 18px 11px 19px;
+  padding: 11px 18px;
   border-radius: 8px;
   background-color: var(--color-green);
   color: var(--color-white);
@@ -138,6 +137,48 @@
   color: var(--color-green);
 }
 
+.pricing-list-item:hover .pricing-list-title,
+.pricing-list-item:focus .pricing-list-title {
+  color: var(--color-white);
+}
+
+.pricing-list-item:hover .pricing-list-description,
+.pricing-list-item:focus .pricing-list-description {
+  color: var(--color-white);
+}
+
+.pricing-list-item:hover .pricing-list-text,
+.pricing-list-item:focus .pricing-list-text {
+  color: var(--color-white);
+}
+
+@media (min-width: 1150px) {
+  .pricing {
+    padding: 50px 0 150px 0;
+  }
+
+  .pricing-txt {
+    margin-bottom: 32px;
+  }
+
+  .pricing-title {
+    font-size: 40px;
+    margin-bottom: 16px;
+  }
+
+  .pricing-text {
+    margin-bottom: 49px;
+  }
+
+  .pricing-list {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .pricing-list-item {
+    max-width: calc((100% - 2 * 72px) / 3);
+  }
+}
 /* #endregion */
 
 /* #region section 2 great effects */
