@@ -141,10 +141,9 @@
 /* #endregion */
 
 /* #region section 2 great effects */
-
 .enterprise {
   background: linear-gradient(180deg, #f6f6f6 0%, rgba(246, 246, 246, 0) 100%);
-  padding: 52px 0;
+  padding: 46px 0;
 }
 
 .enterprise-container {
@@ -155,12 +154,12 @@
   font-weight: 600;
   font-size: 24px;
   text-transform: uppercase;
-  margin-bottom: 16px;
+  margin-bottom: 24px;
 }
 
 .enterprise-title {
-  font-size: 34px;
-  margin-bottom: 8px;
+  font-size: 32px;
+  margin-bottom: 25px;
 }
 
 .enterprise-text {
@@ -183,6 +182,21 @@
 .enterprise-btn:hover,
 .enterprise-btn:focus {
   background-color: #00ac98;
+}
+
+@media (min-width: 1150px) {
+  .enterprise {
+      padding: 52px 0;
+    }
+
+  .enterprise-word {
+      margin-bottom: 16px;
+    }
+
+  .enterprise-title {
+      font-size: 34px;
+      margin-bottom: 8px;
+    }
 }
 
 /* #endregion */
