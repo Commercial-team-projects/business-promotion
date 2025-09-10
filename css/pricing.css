@@ -211,6 +211,8 @@
   gap: 32px;
 }
 
+@media (min-width: 1150px) {}
+
 .effects-box-block {
   display: flex;
   align-items: center;
@@ -373,3 +375,4 @@
   white-space: nowrap;
 }
 /* <!-- #endregion --> */
+
