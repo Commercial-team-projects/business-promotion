@@ -1,6 +1,15 @@
 /* #region FOOTER */
-.container {}
 
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 60px;
+    margin-top: 100px;
+}
+
+@media (min-width: 1150px) {
 .footer-container {
     display: flex;
     flex-wrap: wrap;
@@ -8,6 +17,8 @@
     gap: 60px;
     margin-top: 100px;
 }
+}
+
 
 .footer-logo {
     display: flex;
@@ -26,9 +37,6 @@
     gap: 16px;
 }
 
-.footer-social-list-item {}
-
-.footer-resource-list {}
 
 .footer-list-title {
     font-weight: 500;
@@ -41,8 +49,6 @@
 .footer-resource-list-item {
     line-height: 2.19;
 }
-
-.footer-legal-list {}
 
 .footer-legal-list-item {
     line-height: 2.19;
