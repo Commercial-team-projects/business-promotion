@@ -690,15 +690,15 @@ h1 {
 /* #region section 7 STRATEGY */
 
 .section-strategy {
-  margin-top: 100px;
-  margin-bottom: 170px;
+  padding-top: 100px;
+  padding-bottom: 60px;
 }
-
-/* .contents-strategy {} */
 
 .strategy-title {
   font-size: 34px;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .strategy-title-text {
@@ -706,16 +706,32 @@ h1 {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
-  max-width: 430px;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .strategy-list {
   display: flex;
-  gap: 30px;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.strategy-list-item-box {
+  border: 1px solid #dedede;
+  border-radius: 0 0 8px 8px;
+  padding-top: 24px;
+  padding-left: 0px;
+  padding-bottom: 40px;
+  min-width: 350px;
+}
+
+.strategy-list-img {
+  display: block;
+  border-radius: 8px 8px 0 0;
+  width: 100%;
 }
 
 .strategy-list-item {
-  width: calc((100% - 60px) / 3);
   transition: all 250ms ease-in-out;
 }
 
@@ -729,20 +745,9 @@ h1 {
   color: #02897a;
 }
 
-.strategy-list-imag {
-  display: block;
-  border-radius: 8px 8px 0 0;
-}
-
-.strategy-list-item-box {
-  border: 1px solid #dedede;
-  border-radius: 0 0 8px 8px;
-  padding: 24px;
-  width: 350px;
-}
-
 .strategy-list-text {
   line-height: 1.75;
+  margin-bottom: 12px;
 }
 
 .strategy-list-text-part {
@@ -750,10 +755,46 @@ h1 {
 }
 
 .strategy-list-name {
-  max-width: 336px;
+  max-width: 294px;
   font-size: 24px;
   line-height: 1.67;
-  transition: color 250ms ease-in-out;
+  transition: color 500ms ease-in-out;
+}
+
+@media screen and (min-width: 1150px) {
+  .section-strategy {
+      padding-top: 90px;
+      padding-bottom: 170px;
+    }
+
+  .strategy-title {
+      margin-bottom: 10px;
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+  .strategy-title-text {
+      max-width: 430px;
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+  .strategy-list {
+    flex-direction: row;
+    gap: 30px;
+    }
+
+  .strategy-list-item {
+      width: calc((100% - 60px) / 3);
+    }
+
+  .strategy-list-item-box {
+      padding: 24px;
+    }
+
+  .strategy-list-name {
+    max-width: 336px;
+  }  
 }
 
 /* #endregion */
