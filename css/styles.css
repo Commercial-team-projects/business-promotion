@@ -760,11 +760,8 @@ h1 {
 
 /* #region section 8 PRICE TABLE */
 
-/* .price-table {} */
-
-/* .container {} */
-
-.price-table-container {
+.price-table {
+  padding: 50px 0 100px 0;
   text-align: center;
 }
 
@@ -775,12 +772,11 @@ h1 {
 
 .price-table-text {
   font-size: 16px;
+  margin-bottom: 40px;
 }
 
 .price-table-list {
   display: flex;
-  margin-top: 40px;
-  margin-bottom: 100px;
   gap: 72px;
   max-width: calc((100% - 144px) / 3);
 }
@@ -794,6 +790,7 @@ h1 {
   width: 322px;
   height: 456px;
   box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.25);
+  transition: box-shadow 500ms ease-in-out, background-color 500ms ease-in-out;
   padding: 32px 0;
 }
 
@@ -801,11 +798,13 @@ h1 {
   font-size: 24px;
   line-height: 1.67;
   margin-bottom: 8px;
+  transition: color 500ms ease-in-out;
 }
 
 .price-list-box-subtitle {
   line-height: 2.5;
-  margin-bottom: 10px;
+  margin-bottom: 16px;
+  transition: color 500ms ease-in-out;
 }
 
 .price-list-box-text {
@@ -813,37 +812,46 @@ h1 {
   line-height: 1.38;
   letter-spacing: 0.01em;
   margin-bottom: 16px;
+  transition: color 500ms ease-in-out;
 }
 
 .price {
-  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.01em;
-  color: #afafaf;
-  margin-bottom: 36px;
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
-.price-part {
-  font-family: "Montserrat", sans-serif;
+.price-item-zero {
   font-weight: 700;
   font-size: 76px;
-  line-height: 1.31579;
+  line-height: 1.32;
   letter-spacing: 0em;
   text-align: center;
-  color: #02897a;
+  color: var(--color-green);
+  position: relative;
+  transition: color 500ms ease-in-out;
 }
 
-.price-part-dollar {
+.price-item-span-box {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.price-item-dollar {
   font-family: "Inter", sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 1.25;
   letter-spacing: 0em;
-  color: #02897a;
-  vertical-align: super;
+  color: var(--color-green);
 }
-
-/* .per-month {} */
 
 .price-list-item .price-button {
   display: block;
