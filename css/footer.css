@@ -12,27 +12,30 @@
     padding-bottom: 40px;
 }
 
-@media (min-width: 1150px) {
+@media (min-width: 1110px) {
 .footer-container {
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
     align-items: start;
     column-gap: 60px;
+    row-gap: 10px;
 }
 }
 
 .footer-logo {
     display: flex;
     align-items: center;
+    justify-content: center;
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-size: 16px;
     color: #173a56;
     gap: 16px;
-    margin-bottom: 8px;
+    margin-bottom: 25px;
 }
 
-@media (min-width: 1150px) {
+@media (min-width: 1110px) {
 .footer-logo {
     font-size: 30px;
     line-height: 0.93;
@@ -59,7 +62,7 @@
     text-align: center;
 }
 
-@media (min-width: 1150px) {
+@media (min-width: 1110px) {
 .footer-resource-list-item {
     text-align: start;
 }
@@ -69,7 +72,7 @@
     line-height: 2.19;
     text-align: center;
 }
-@media (min-width: 1150px) {
+@media (min-width: 1110px) {
 .footer-legal-list-item {
     text-align: start;
 }
@@ -80,30 +83,45 @@
     text-align: center;
     width: 280px;
 }
-@media (min-width: 1150px) {
+@media (min-width: 1110px) {
      .footer-form-title{
-        
+        margin-bottom: 30px;
         text-align: start;
     } 
-    
 }
 
 .footer-input-box {
     display: flex;
     align-items: center;
     flex-direction: column;
+    
 }
-@media (min-width: 1150px) {
-    .footer-input-box {
 
+@media (min-width: 1110px) {
+    .footer-input-box {
         align-items: start;
     }
 }
 
-.footer-input-box img {
-    width: 16px;
-    height: 16px;
-    margin-right: 8px;
+.form-wrapper{
+    position: relative;
+}
+
+.footer-input-icon{
+    display: none;
+}
+
+@media (min-width: 1110px) {
+    .footer-input-icon{
+        display: block;
+        padding: 0;
+        margin: 0;
+        width: 16px;
+        height: 24px;
+        position: absolute;
+        top: 12px;
+        left: 13px;
+    }
 }
 
 .footer-input {
@@ -115,10 +133,10 @@
     margin-bottom: 21px;
 }
 
-@media (min-width: 1150px) {
-.footer-input {
-    margin-bottom: 25px;
-}
+@media (min-width: 1110px) {
+    .footer-input {
+        margin-bottom: 25px;
+    }
 }
 
 .footer-input::placeholder {
@@ -139,10 +157,10 @@
 }
 
 .footer-copyright {
-    /* display: block; */
+    display: block;
     font-size: 16px;
     line-height: 1.86;
-    /* max-width: 100%; */
+    max-width: 100%;
     margin: 0 auto;
     text-align: center;
 }
