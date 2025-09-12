@@ -79,25 +79,31 @@ button {
 /* #endregion */
 
 /* #region header */
-.header-container {
-  display: flex;
-  align-items: center;
+.header-page {
+  border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
-
-.header-nav {
+.header-container {
+  min-height: 70px;
   display: flex;
   align-items: center;
-  gap: 237px;
+  justify-content: space-between;
+}
+.header-menu,
+.header-register,
+.header-reagister {
+  display: none;
 }
 
 .container-logo {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 8px;
 }
 
 .header-logo {
-  padding: 22px 0;
+  padding: 17px 0;
 }
 
 .header-logo-text {
@@ -108,67 +114,102 @@ button {
   text-transform: capitalize;
 }
 
-.header-menu {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-}
-
-.header-menu-link {
-  font-size: 16px;
-  line-height: 1.75;
-  color: var(--color-dark-blue1);
-  padding: 26px 0;
-  transition: text-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header-menu-link.current {
-  text-shadow: 0.6px 0px 0px #212121, -0.6px 0px 0px #212121;
-}
-
-.header-menu-link:hover,
-.header-menu-link:focus {
-  text-shadow: 0.6px 0px 0px #212121, -0.6px 0px 0px #212121;
-}
-
-.header-reagister {
-  display: flex;
-  align-items: center;
-  gap: 21px;
-  margin-left: auto;
-}
-
-.header-register-btn {
-  font-weight: 600;
-  font-size: 16px;
-  text-align: center;
-  cursor: pointer;
-  padding: 9px 24.65px;
-  border-radius: 4px;
-}
-
-.header-register-btn.sign-in {
-  color: var(--color-dark-blue2);
-  border: 1px solid #bcd0e5;
-  background-color: transparent;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header-register-btn.sign-in:hover,
-.header-register-btn.sign-in:focus {
-  background-color: #bcd0e5;
-}
-
-.header-register-btn.sign-up {
-  color: var(--color-white);
-  background-color: var(--color-green);
+.burger-btn {
+  padding: 0;
   border: none;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
-.header-register-btn.sign-up:hover,
-.header-register-btn.sign-up:focus {
-  background-color: #01bfaa;
+.burger-icon {
+  display: block;
+  color: var(--color-dark-blue2);
+}
+@media screen and (min-width: 1150px) {
+  .burger-btn {
+    display: none;
+  }
+  .header-container {
+    justify-content: flex-start;
+  }
+
+  .header-nav {
+    display: flex;
+    align-items: center;
+    gap: 237px;
+  }
+
+  .container-logo {
+    gap: 16px;
+  }
+  .header-logo {
+    padding: 22px 0;
+  }
+  .header-menu {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .header-menu-link {
+    font-size: 16px;
+    line-height: 1.75;
+    color: var(--color-dark-blue1);
+    padding: 26px 0;
+    transition: text-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .header-menu-link.current {
+    text-shadow: 0.6px 0px 0px #212121, -0.6px 0px 0px #212121;
+  }
+
+  .header-menu-link:hover,
+  .header-menu-link:focus {
+    text-shadow: 0.6px 0px 0px #212121, -0.6px 0px 0px #212121;
+  }
+
+  .header-reagister {
+    display: flex;
+    align-items: center;
+    gap: 21px;
+    margin-left: auto;
+  }
+
+  .header-register-btn {
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    padding: 9px 24.65px;
+    border-radius: 4px;
+  }
+
+  .header-register-btn.sign-in {
+    color: var(--color-dark-blue2);
+    border: 1px solid #bcd0e5;
+    background-color: transparent;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .header-register-btn.sign-in:hover,
+  .header-register-btn.sign-in:focus {
+    background-color: #bcd0e5;
+  }
+
+  .header-register-btn.sign-up {
+    color: var(--color-white);
+    background-color: var(--color-green);
+    border: none;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .header-register-btn.sign-up:hover,
+  .header-register-btn.sign-up:focus {
+    background-color: #01bfaa;
+  }
 }
 
 /* #endregion */

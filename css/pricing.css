@@ -138,6 +138,78 @@
   color: var(--color-green);
 }
 
+.pricing-list-item:hover .pricing-list-title,
+.pricing-list-item:hover .pricing-list-description,
+.pricing-list-item:hover .pricing-list-text,
+.pricing-list-item:hover .pricing-list-payment {
+  color: var(--color-white);
+}
+
+/* ======== АДАПТИВ ДЛЯ PRICING (только mobile) ======== */
+@media screen and (max-width: 480px) {
+  .pricing {
+    padding: 30px 0 60px 0;
+  }
+
+  .pricing-txt {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .pricing-title {
+    font-size: 22px;
+    margin-bottom: 12px;
+  }
+
+  .pricing-text {
+    font-size: 13px;
+    line-height: 1.4;
+    margin-bottom: 24px;
+    padding: 0 10px;
+  }
+
+  .pricing-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .pricing-list-item {
+    width: 322px;
+    height: 456px;
+    max-width: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .pricing-list-title {
+    font-size: 18px;
+  }
+
+  .pricing-list-description,
+  .pricing-list-text,
+  .pricing-list-payment {
+    font-size: 14px;
+  }
+
+  .price {
+    font-size: 42px;
+  }
+
+  .dollar {
+    font-size: 16px;
+    top: 0;
+    transform: translateY(50%);
+  }
+
+  .pricing-button {
+    font-size: 14px;
+    padding: 8px 14px;
+  }
+}
 /* #endregion */
 
 /* #region section 2 great effects */
