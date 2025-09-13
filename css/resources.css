@@ -158,11 +158,14 @@
   color: #22343d;
 }
 
-.res-form {}
-
-.res-form-label {
+.res-form {
   position: relative;
+  width: 469px;
+  height: 66px;
+
 }
+
+.res-form-label {}
 
 .res-form-input {
 
@@ -189,7 +192,7 @@
   position: absolute;
   top: 0;
   right: 0;
-  transform: translate(-8px, -25%);
+  transform: translate(-8px, 8px);
   border: none;
   border-radius: 100px;
   width: 117px;
