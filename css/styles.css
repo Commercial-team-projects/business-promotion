@@ -641,6 +641,7 @@ h1 {
 @media (min-width: 1150px) {
   .process-container.container {
     width: 956px;
+    padding: 0 20px;
   }
 
   .process-title {
