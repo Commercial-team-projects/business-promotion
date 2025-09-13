@@ -470,8 +470,7 @@
   align-items: center;
   justify-content: center;
   height: auto;
-  min-width: 371px;
-  max-width: 400px;
+  max-width: 371px;
   border-radius: 32px;
   gap: 20px;
 }
@@ -486,7 +485,7 @@
 
 .promo-title {
   color: var(--color-white);
-  font-weight: 600;
+  font-weight: 500;
   font-size: 32px;
   line-height: 1.51;
   max-width: 332px;
