@@ -91,8 +91,34 @@
   background-color: #01bfaa;
 }
 
-.icon-theme-mode {
-  stroke: #02897a;
+.theme-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  border: none;
+  width: 32px;
+  height: 32px;
+  background: #f3f3f3;
+  transition: background 350ms ease-in;
+}
+
+.header-theme-icon {
+  display: flex;
+  fill: #02897a;
+  transition: fill 250ms ease-in, transform 250ms ease-in;
+}
+
+.header-theme-icon:hover,
+.header-theme-icon:focus {
+  fill: #f3f3f3;
+  transform: rotatez(180deg);
+
+}
+
+.theme-btn:hover,
+.theme-btn:focus {
+  background: #02897a;
 }
 
 /* #endregion */
@@ -352,15 +378,20 @@
   border: none;
   outline: none;
   background: transparent;
-
   margin: 0 auto;
+
+  transition: text-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .story-btn-icon {
   fill: #2e3a59;
 }
 
-
+.story-btn:hover,
+.theme-btn:focus {
+  text-shadow: 0.4px 0px 0px #212121, -0.4px 0px 0px #212121;
+  fill: #2e3a59;
+}
 
 
 /* #endregion */
