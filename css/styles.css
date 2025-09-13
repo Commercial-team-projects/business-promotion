@@ -554,7 +554,7 @@ h1 {
   padding: 50px 0;
 }
 
-.process-container {
+.process-container.container {
   min-width: 348px;
   width: 100%;
   margin: 0 auto;
@@ -611,7 +611,7 @@ h1 {
   padding-right: 20px;
   border-radius: 25px;
   border: transparent;
-  width: 220px;
+  width: 227px;
 }
 
 .process-list-item:hover .process-item-text {
@@ -639,8 +639,8 @@ h1 {
 }
 
 @media (min-width: 1150px) {
-  .process-container {
-    width: 916px;
+  .process-container.container {
+    width: 956px;
   }
 
   .process-title {
@@ -654,19 +654,18 @@ h1 {
   .process-list {
     display: flex;
     flex-direction: row;
-    column-gap: 100px;
     flex-wrap: wrap;
     row-gap: 25px;
     margin-bottom: 50px;
-    justify-content: center;
+    justify-content: space-between;
   }
 
   .process-item-text {
-    width: 282px;
+    width: 290px;
  }
 
   .process-list-item {
-    gap: 10px;
+    gap: 20px;
   }
 
    .process-list-item:nth-child(1) {
