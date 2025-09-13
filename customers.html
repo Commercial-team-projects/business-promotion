@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css" />
   <link rel="stylesheet" href="./css/customers.css" />
   <link rel="stylesheet" href="./css/global.css" />
+  <link rel="stylesheet" href="./css/header.css" />
+  <link rel="stylesheet" href="./css/footer.css" />
 </head>
 
 <body>
@@ -120,17 +122,25 @@
 
       <!-- #region section 3 -->
       <section class="work">
-        <div class="container">
+        <div class="container work-container">
           <h2 class="work-title">How Product Work?</h2>
           <ul class="work-articles">
             <li class="work-articles-item">
-              <img
-                class="work-img-mac"
-                src="./images/mac1.png"
-                alt="macbook"
-                width="500"
-                height="280"
-              />
+              <picture class="work-img-mac">
+                <source
+                srcset="./images/customers-work/mac1-mob-min.jpg 1x,
+                ./images/customers-work/mac1-mob@2x-min.jpg 2x"
+                media="(max-width: 1149px)">
+                <source
+                srcset="./images/customers-work/Macbook-Pro-desktop-min.jpg 1x, 
+                ./images/customers-work/Macbook-Pro-desktop@2x-min.jpg 2x"
+                media="(min-width: 1150px)"
+                >
+                <img
+                  src="./images/customers-work/Macbook-Pro-desktop-min.jpg"
+                  alt="macbook"
+                />
+              </picture>
               <article class="work-article">
                 <p class="work-article-step">step 1</p>
                 <h3 class="work-article-title">Apply for a product</h3>
@@ -152,22 +162,38 @@
                   fee will be fully refunded.
                 </p>
               </article>
-              <img
-                class="work-img-mac"
-                src="./images/mac2.png"
-                alt="macbook"
-                width="500"
-                height="280"
-              />
+              <picture class="work-img-mac">
+                <source
+                srcset="./images/customers-work/mac2-mob-min.jpg 1x, 
+                ./images/customers-work/mac2-mob@2x-min.jpg 2x"
+                media="(max-width: 1149px)">
+                <source
+                srcset="./images/customers-work/Macbook-Pro1-desktop-min.jpg 1x, 
+                ./images/customers-work/Macbook-Pro-desktop@2x-1-min.jpg"
+                media="(min-width: 1150px)"
+                >
+                <img
+                  src="./images/customers-work/Macbook-Pro1-desktop-min.jpg"
+                  alt="macbook"
+                />
+              </picture>
             </li>
             <li class="work-articles-item">
-              <img
-                class="work-img-mac"
-                src="./images/mac3.png"
-                alt="macbook"
-                width="500"
-                height="280"
-              />
+              <picture class="work-img-mac">
+                <source
+                srcset="./images/customers-work/mac3-mob-min.jpg 1x,
+                ./images/customers-work/mac3-mob@2x-min.jpg 2x"
+                media="(max-width: 1149px)">
+                <source
+                srcset="./images/customers-work/Macbook-Pro2-desktop-min.jpg 1x, 
+                ./images/customers-work/Macbook-Pro-desktop@2x-2-min.jpg"
+                media="(min-width: 1150px)"
+                >
+                <img
+                  src="./images/customers-work/Macbook-Pro2-desktop-min.jpg"
+                  alt="macbook"
+                />
+              </picture>
               <article class="work-article">
                 <p class="work-article-step">step 3</p>
                 <h3 class="work-article-title">Completion</h3>
@@ -192,8 +218,17 @@
       <!-- #endregion -->
 
       <!-- #region section 5 -->
-      <section>
-        <div class="container"></div>
+      <section class="join-section">
+        <div class="container join-container">
+          <div class="join-box">
+            <h2 class="join-title">Join 100 Compannies who boost their business with Product</h2>
+            <button class="join-btn button" type="button">Get This</button>
+          </div>
+         <img 
+  src="./images/graphics.png" 
+  srcset="./images/graphics.png 1x, ./images/graphicsx2.png 2x" 
+  alt="graphics"> 
+        </div>
       </section>
       <!-- #endregion -->
     </main>
