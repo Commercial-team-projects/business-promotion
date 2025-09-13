@@ -550,11 +550,23 @@ h1 {
 
 /* #region section 6 */
 
+.process {
+  padding: 50px 0;
+}
+
+.process-container.container {
+  min-width: 348px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
 .process-title {
   font-weight: 700;
   font-size: 32px;
   text-align: center;
   color: var(--color-dark-blue1);
+  margin-bottom: 8px;
 }
 
 .process-text {
@@ -566,6 +578,25 @@ h1 {
   margin: 0 auto;
   margin-bottom: 40px;
   width: 100%;
+  max-width: 338px;
+}
+
+.process-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.process-list-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.process-list-item:nth-child(2) {
+  order: 4;
 }
 
 .process-item-text {
@@ -580,6 +611,7 @@ h1 {
   padding-right: 20px;
   border-radius: 25px;
   border: transparent;
+  width: 227px;
 }
 
 .process-list-item:hover .process-item-text {
@@ -606,55 +638,10 @@ h1 {
   border: 1px solid var(--color-black);
 }
 
-@media (max-width: 1149px) {
-  .process {
-    padding: 50px 0;
-  }
-
-  .process-container {
-    min-width: 348px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 32px;
-  }
-
-  .process-title {
-    margin-bottom: 8px;
-  }
-
-  .process-text {
-    max-width: 338px;
-    width: 100%;
-  }
-
-  .process-list {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-    align-items: center;
-
-    margin-bottom: 32px;
-  }
-
-  .process-list-item {
-    display: flex;
-    align-items: center;
-
-    gap: 15px;
-  }
-
-  .process-list-item:nth-child(2) {
-    order: 4;
-  }
-}
-
 @media (min-width: 1150px) {
-  .process {
-    padding: 50px 0;
-  }
-
-  .process-container {
-    width: 916px;
+  .process-container.container {
+    width: 956px;
+    padding: 0 20px;
   }
 
   .process-title {
@@ -667,19 +654,36 @@ h1 {
 
   .process-list {
     display: flex;
-    column-gap: 100px;
+    flex-direction: row;
     flex-wrap: wrap;
     row-gap: 25px;
     margin-bottom: 50px;
+    justify-content: space-between;
   }
 
+  .process-item-text {
+    width: 290px;
+ }
+
   .process-list-item {
-    display: flex;
-    flex-basis: calc((100% - 100px) / 2);
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
+    gap: 20px;
   }
+
+   .process-list-item:nth-child(1) {
+     order: 1;
+  }
+
+   .process-list-item:nth-child(2) {
+     order: 2;
+  }
+
+   .process-list-item:nth-child(3) {
+     order: 3;
+  }
+
+   .process-list-item:nth-child(4) {
+     order: 4;
+ }
 }
 
 /* #endregion */
