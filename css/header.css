@@ -5,12 +5,14 @@
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
+
 .header-container {
   min-height: 70px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 .header-menu,
 .header-register,
 .header-reagister {
@@ -47,12 +49,13 @@
 
 .burger-icon {
   display: block;
-  color: var(--color-dark-blue2);
 }
+
 @media screen and (min-width: 1150px) {
   .burger-btn {
     display: none;
   }
+
   .header-container {
     justify-content: flex-start;
   }
@@ -66,9 +69,11 @@
   .container-logo {
     gap: 16px;
   }
+
   .header-logo {
     padding: 22px 0;
   }
+
   .header-menu {
     display: flex;
     align-items: center;
@@ -132,4 +137,5 @@
     background-color: #01bfaa;
   }
 }
+
 /* #endregion */
