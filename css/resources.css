@@ -104,16 +104,14 @@
 }
 
 .header-theme-icon {
-  display: flex;
   fill: #02897a;
   transition: fill 250ms ease-in, transform 250ms ease-in;
 }
 
-.header-theme-icon:hover,
-.header-theme-icon:focus {
+.theme-btn:hover svg,
+.theme-btn:focus svg {
   fill: #f3f3f3;
   transform: rotatez(180deg);
-
 }
 
 .theme-btn:hover,
@@ -162,7 +160,6 @@
   position: relative;
   width: 469px;
   height: 66px;
-
 }
 
 .res-form-label {}
