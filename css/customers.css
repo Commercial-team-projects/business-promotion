@@ -25,7 +25,7 @@
   width: 164px;
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1150px) {
   .hero-section .container {
     padding-top: 100px;
     padding-bottom: 117px;
@@ -256,9 +256,78 @@ section.work {
 /* #endregion */
 
 /* #region section 4 */
-.section {
+.community {
+  padding: 30px 0;
+  background: linear-gradient(
+    180deg,
+    var(--color-white-cloud) 0%,
+    rgba(245, 245, 245, 0) 100%
+  );
 }
-
+.container.community-container {
+  padding: 0 30px;
+}
+.community-title {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 85px;
+}
+.community-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 66px;
+  text-align: center;
+}
+.community-list-icon {
+  padding: 44px;
+  box-sizing: content-box;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 35px;
+}
+.community-list-icon.icon-flow,
+.community-list-icon.icon-chart {
+  border-radius: 100px;
+}
+.community-list-icon.icon-flow {
+  background-color: #ffefef;
+}
+.community-list-icon.icon-chart {
+  background-color: #f2f6ff;
+}
+.community-list-title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  color: #000;
+  margin-bottom: 16px;
+}
+.community-list-box {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.78;
+  margin-bottom: 12px;
+}
+.community-list-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.75;
+  color: #000;
+}
+@media screen and (min-width: 1150px) {
+  .community-title {
+    margin-bottom: 93px;
+    max-width: 537px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .community-list {
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 227px;
+  }
+}
 /* #endregion */
 
 /* #region section 5 */
