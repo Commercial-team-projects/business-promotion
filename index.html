@@ -39,6 +39,11 @@
         <li class="header-register-item"><button class="header-register-btn sign-in" type="button">Sign In</button></li>
         <li class="header-register-item"><button class="header-register-btn sign-up" type="button">Sign Up</button></li>
       </ul>
+      <button class="burger-btn" type="button" aria-label="Open menu">
+      <svg class="burger-icon" width="29" height="32">
+        <use href="./images/icons.svg#icon-burger"></use>
+      </svg>
+    </button>
     </div>
   </header>
 
@@ -271,7 +276,9 @@
       </p>
       <ul class="strategy-list">
         <li class="strategy-list-item">
-          <img class="strategy-list-imag" src="./images/section-strategy/strategy1.jpg" alt="image-bg" />
+          <img class="strategy-list-img" 
+          srcset="./images/section-strategy/w1-min.jpg 1x, ./images/section-strategy/w12x-min.jpg 2x" 
+          src="./images/section-strategy/w1-min.jpg" alt="image-bg" />
           <div class="strategy-list-item-box">
             <p class="strategy-list-text">
               By <span class="strategy-list-text-part">Wahid Ari</span> | 03
@@ -283,7 +290,9 @@
           </div>
         </li>
         <li class="strategy-list-item">
-          <img class="strategy-list-imag" src="./images/section-strategy/strategy2.jpg" alt="image-bg" />
+          <img class="strategy-list-img" 
+          srcset="./images/section-strategy/w2-min.jpg 1x, ./images/section-strategy/w22x-min.jpg 2x" 
+          src="./images/section-strategy/w2-min.jpg" alt="image-bg" />
           <div class="strategy-list-item-box">
             <p class="strategy-list-text">
               By <span class="strategy-list-text-part">Wahid Ari</span> | 03
@@ -295,7 +304,9 @@
           </div>
         </li>
         <li class="strategy-list-item">
-          <img class="strategy-list-imag" src="./images/section-strategy/strategy3.jpg" alt="image-bg" />
+          <img class="strategy-list-img" 
+          srcset="./images/section-strategy/w3-min.jpg 1x, ./images/section-strategy/w32x-min.jpg 2x" 
+          src="./images/section-strategy/w3-min.jpg" alt="image-bg" />
           <div class="strategy-list-item-box">
             <p class="strategy-list-text">
               By <span class="strategy-list-text-part">Wahid Ari</span> | 03
@@ -542,7 +553,6 @@
 
   <footer>
     <div class="container footer-container">
-
       <div class="social-container">
         <a class="footer-logo .logo" href="./index.html">
           <img src="./images/logo.svg" alt="logo" width="40" height="36" />Product</a>
@@ -560,37 +570,35 @@
           </li>
         </ul>
       </div>
-
-      <ul class="footer-resource-list">
-        <li>
-          <h3 class="footer-list-title">Resource</h3>
-        </li>
-        <li class="footer-resource-list-item"><a href="#" target="_blank">About Us</a></li>
-        <li class="footer-resource-list-item"><a href="#" target="_blank">Blog</a></li>
-        <li class="footer-resource-list-item"><a href="#" target="_blank">Contact</a></li>
-        <li class="footer-resource-list-item"><a href="#" target="_blank">FAQ</a></li>
-      </ul>
-
-      <ul class="footer-legal-list">
-        <li>
-          <h3 class="footer-list-title">Legal Stuff</h3>
-        </li>
-        <li class="footer-legal-list-item"><a href="#" target="_blank">Disclaimer</a></li>
-        <li class="footer-legal-list-item"><a href="#" target="_blank">Financing</a></li>
-        <li class="footer-legal-list-item"><a href="#" target="_blank">Privacy Policy</a></li>
-      </ul>
-
-      <div class=".footer-input-box">
-
-        <h3 class="footer-list-title">knowing you're always on the best energy deal.</h3>
-        <!-- <img src="./images/mobile-screen.svg" alt="mobile icon"> -->
-        <input class="footer-input" type="tel" name="phone" placeholder="Enter your phone number" />
+      <div>
+        <h3 class="footer-list-title">Resource</h3>
+        <ul class="footer-resource-list">
+          <li class="footer-resource-list-item"><a href="#" target="_blank">About Us</a></li>
+          <li class="footer-resource-list-item"><a href="#" target="_blank">Blog</a></li>
+          <li class="footer-resource-list-item"><a href="#" target="_blank">Contact</a></li>
+          <li class="footer-resource-list-item"><a href="#" target="_blank">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="footer-list-title">Legal Stuff</h3>
+        <ul class="footer-legal-list">
+          <li class="footer-legal-list-item"><a href="#" target="_blank">Disclaimer</a></li>
+          <li class="footer-legal-list-item"><a href="#" target="_blank">Financing</a></li>
+          <li class="footer-legal-list-item"><a href="#" target="_blank">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-input-box">
+        <h3 class="footer-form-title">knowing you're always on the best energy deal.</h3>     
+        <div class="form-wrapper">
+          <input class="footer-input" type="tel" name="phone" placeholder="Enter your phone number" />
+          <img class="footer-input-icon" width="16px" height="16px" src="./images/mobile-screen.svg" alt="mobile icon"/>
+        </div>
         <button class="footer-input-btn" type="button">Sign up Now</button>
 
       </div>
-
       <p class="footer-copyright">Made With Love By Figmaland All Right Reserved</p>
     </div>
+    
   </footer>
   <!-- #endregion -->
 

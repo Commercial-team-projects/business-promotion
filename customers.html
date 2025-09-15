@@ -40,6 +40,11 @@
         <li class="header-register-item"><button class="header-register-btn sign-in" type="button">Sign In</button></li>
         <li class="header-register-item"><button class="header-register-btn sign-up" type="button">Sign Up</button></li>
       </ul>
+      <button class="burger-btn" type="button" aria-label="Open menu">
+      <svg class="burger-icon" width="28" height="31">
+        <use href="./images/icons.svg#icon-burger"></use>
+      </svg>
+    </button>
     </div>
   </header>
   <!-- #endregion -->
@@ -122,17 +127,25 @@
 
       <!-- #region section 3 -->
       <section class="work">
-        <div class="container">
+        <div class="container work-container">
           <h2 class="work-title">How Product Work?</h2>
           <ul class="work-articles">
             <li class="work-articles-item">
-              <img
-                class="work-img-mac"
-                src="./images/mac1.png"
-                alt="macbook"
-                width="500"
-                height="280"
-              />
+              <picture class="work-img-mac">
+                <source
+                srcset="./images/customers-work/mac1-mob-min.jpg 1x,
+                ./images/customers-work/mac1-mob@2x-min.jpg 2x"
+                media="(max-width: 1149px)">
+                <source
+                srcset="./images/customers-work/Macbook-Pro-desktop-min.jpg 1x, 
+                ./images/customers-work/Macbook-Pro-desktop@2x-min.jpg 2x"
+                media="(min-width: 1150px)"
+                >
+                <img
+                  src="./images/customers-work/Macbook-Pro-desktop-min.jpg"
+                  alt="macbook"
+                />
+              </picture>
               <article class="work-article">
                 <p class="work-article-step">step 1</p>
                 <h3 class="work-article-title">Apply for a product</h3>
@@ -154,22 +167,38 @@
                   fee will be fully refunded.
                 </p>
               </article>
-              <img
-                class="work-img-mac"
-                src="./images/mac2.png"
-                alt="macbook"
-                width="500"
-                height="280"
-              />
+              <picture class="work-img-mac">
+                <source
+                srcset="./images/customers-work/mac2-mob-min.jpg 1x, 
+                ./images/customers-work/mac2-mob@2x-min.jpg 2x"
+                media="(max-width: 1149px)">
+                <source
+                srcset="./images/customers-work/Macbook-Pro1-desktop-min.jpg 1x, 
+                ./images/customers-work/Macbook-Pro-desktop@2x-1-min.jpg 2x"
+                media="(min-width: 1150px)"
+                >
+                <img
+                  src="./images/customers-work/Macbook-Pro1-desktop-min.jpg"
+                  alt="macbook"
+                />
+              </picture>
             </li>
             <li class="work-articles-item">
-              <img
-                class="work-img-mac"
-                src="./images/mac3.png"
-                alt="macbook"
-                width="500"
-                height="280"
-              />
+              <picture class="work-img-mac">
+                <source
+                srcset="./images/customers-work/mac3-mob-min.jpg 1x,
+                ./images/customers-work/mac3-mob@2x-min.jpg 2x"
+                media="(max-width: 1149px)">
+                <source
+                srcset="./images/customers-work/Macbook-Pro2-desktop-min.jpg 1x, 
+                ./images/customers-work/Macbook-Pro-desktop@2x-2-min.jpg 2x"
+                media="(min-width: 1150px)"
+                >
+                <img
+                  src="./images/customers-work/Macbook-Pro2-desktop-min.jpg"
+                  alt="macbook"
+                />
+              </picture>
               <article class="work-article">
                 <p class="work-article-step">step 3</p>
                 <h3 class="work-article-title">Completion</h3>
@@ -200,7 +229,7 @@
             <h2 class="join-title">Join 100 Compannies who boost their business with Product</h2>
             <button class="join-btn button" type="button">Get This</button>
           </div>
-         <img 
+        <img 
   src="./images/graphics.png" 
   srcset="./images/graphics.png 1x, ./images/graphicsx2.png 2x" 
   alt="graphics"> 
