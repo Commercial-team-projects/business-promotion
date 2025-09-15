@@ -463,6 +463,9 @@
 
 /* <!-- region 5 -->*/
 
+.promo {
+}
+
 .promo-container {
   display: flex;
   flex-direction: column;
