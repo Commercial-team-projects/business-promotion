@@ -40,12 +40,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-evenly;
   width: 322px;
   height: 456px;
   box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.25);
   border-radius: 8px;
   transition: box-shadow 500ms ease-in-out, background-color 500ms ease-in-out;
-  padding: 24px 0 32px 0;
+  padding: 32px 0 32px 0;
 }
 
 .pricing-list-title {
@@ -108,7 +109,7 @@
 
 .pricing-button {
   display: block;
-  margin-top: 22px;
+  margin-top: 14px;
   padding: 11px 18px;
   border-radius: 8px;
   background-color: var(--color-green);
@@ -117,6 +118,7 @@
   font-weight: 600;
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
+  transition: color 500ms ease-in-out, background-color 500ms ease-in-out;
 }
 
 .pricing-list-item:hover,
@@ -460,6 +462,8 @@
   white-space: nowrap;
 }
 /* <!-- #endregion --> */
+<<<<<<< HEAD
+=======
 
 /* <!-- region 5 -->*/
 
@@ -543,3 +547,4 @@
     max-width: 341px;
   }
 }
+>>>>>>> develop-merge

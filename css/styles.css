@@ -791,34 +791,31 @@ h1 {
 /* #endregion */
 
 /* #region section 8 PRICE TABLE */
-
-/* .price-table {} */
-
-/* .container {} */
-
-.price-table-container {
+.price-table {
+  padding: 50px 0 100px 0;
   text-align: center;
 }
 
 .price-table-title {
   font-size: 34px;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .price-table-text {
   font-size: 16px;
+  margin-bottom: 74px;
 }
 
 .price-table-list {
   display: flex;
-  margin-top: 40px;
-  margin-bottom: 100px;
-  gap: 72px;
-  max-width: calc((100% - 144px) / 3);
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
 }
 
 .price-list-item {
   text-align: center;
+  transition: box-shadow 500ms ease-in-out, background-color 500ms ease-in-out;
 }
 
 .price-list-item-box {
@@ -833,49 +830,75 @@ h1 {
   font-size: 24px;
   line-height: 1.67;
   margin-bottom: 8px;
+  transition: color 500ms ease-in-out;
 }
 
 .price-list-box-subtitle {
   line-height: 2.5;
-  margin-bottom: 10px;
-}
-
-.price-list-box-text {
-  font-weight: 500;
-  line-height: 1.38;
-  letter-spacing: 0.01em;
   margin-bottom: 16px;
+  transition: color 500ms ease-in-out;
 }
 
 .price {
-  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.01em;
-  color: #afafaf;
-  margin-bottom: 36px;
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
-.price-part {
-  font-family: "Montserrat", sans-serif;
+.price-item-zero {
   font-weight: 700;
   font-size: 76px;
-  line-height: 1.31579;
+  line-height: 1.32;
   letter-spacing: 0em;
   text-align: center;
-  color: #02897a;
+  color: var(--color-green);
+  transition: color 500ms ease-in-out;
 }
 
-.price-part-dollar {
+.price-item-span-box {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.price-item-dollar {
   font-family: "Inter", sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 1.25;
   letter-spacing: 0em;
-  color: #02897a;
-  vertical-align: super;
+  color: var(--color-green);
+  transition: color 500ms ease-in-out;
 }
 
-/* .per-month {} */
+.price-item-month {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.01em;
+  color: #afafaf;
+}
+
+.price-list-box-text {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.38;
+  letter-spacing: 0.01em;
+  color: var(--color-dark-blue1);
+  margin-bottom: 16px;
+  transition: color 500ms ease-in-out;
+}
+
+.last-p {
+  margin-bottom: 38px;
+}
 
 .price-list-item .price-button {
   display: block;
@@ -883,36 +906,54 @@ h1 {
   border-radius: 8px;
   width: 139px;
   height: 44px;
-  background: #02897a;
+  background: var(--color-green);
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 18px;
-  color: #fff;
+  color: var(--color-white);
   border: none;
+  transition: color 500ms ease-in-out, background-color 500ms ease-in-out;
 }
 
 .price-list-item:hover,
 .price-list-item:focus {
-  background-color: #02897a;
-  color: #ffffff;
+  background-color: var(--color-green);
+  color: var(--color-white);
   border-radius: 8px;
   box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.25);
 }
 
 .price-list-item:hover .price-button,
 .price-list-item:focus .price-button {
-  background-color: #ffffff;
-  color: #02897a;
+  background-color: var(--color-white);
+  color: var(--color-green);
 }
 
 .price-list-item:hover .price-part,
-.price-list-item:focus .price-part {
-  color: #ffffff;
+.price-list-item:focus .price-part,
+.price-list-item:hover .price-item-dollar,
+.price-list-item:focus .price-item-dollar,
+.price-list-item:hover .price-item-zero,
+.price-list-item:focus .price-item-zero,
+.price-list-item:hover .price-list-box-text,
+.price-list-item:focus .price-list-box-text {
+  color: var(--color-white);
 }
 
-.price-list-item:hover .price-part-dollar,
-.price-list-item:focus .price-part-dollar {
-  color: #ffffff;
+@media screen and (min-width: 1150px) {
+  .price-table-title {
+    margin-bottom: 10px;
+  }
+
+  .price-table-text {
+    margin-bottom: 40px;
+  }
+
+  .price-table-list {
+    flex-direction: row;
+    gap: 72px;
+    max-width: calc((100% - 144px) / 3);
+  }
 }
 
 /* #endregion */
