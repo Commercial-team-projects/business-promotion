@@ -181,6 +181,7 @@
     max-width: calc((100% - 2 * 72px) / 3);
   }
 }
+
 /* #endregion */
 
 /* #region section 2 great effects */
@@ -273,8 +274,7 @@
   gap: 24px;
 }
 
-@media (min-width: 1150px) {
-}
+@media (min-width: 1150px) {}
 
 .effects-box-block {
   display: flex;
@@ -461,9 +461,8 @@
 .no-wrap {
   white-space: nowrap;
 }
+
 /* <!-- #endregion --> */
-<<<<<<< HEAD
-=======
 
 /* <!-- region 5 -->*/
 
@@ -547,4 +546,3 @@
     max-width: 341px;
   }
 }
->>>>>>> develop-merge
