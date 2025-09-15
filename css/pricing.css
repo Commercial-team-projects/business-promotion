@@ -1,7 +1,6 @@
 /* #region Section 1 Pricing */
-
 .pricing {
-  padding: 50px 0 150px 0;
+  padding: 50px 0 100px 0;
   text-align: center;
 }
 
@@ -9,16 +8,16 @@
   font-weight: 600;
   font-size: 24px;
   color: var(--color-dark-blue1);
-  margin-bottom: 32px;
+  margin-bottom: 30px;
   text-transform: uppercase;
 }
 
 .pricing-title {
   font-weight: 700;
-  font-size: 40px;
+  font-size: 36px;
   text-align: center;
   color: var(--color-dark-blue1);
-  margin-bottom: 16px;
+  margin-bottom: 18px;
 }
 
 .pricing-text {
@@ -26,14 +25,15 @@
   font-size: 16px;
   text-align: center;
   color: var(--color-dark-blue1);
-  margin-bottom: 49px;
+  margin-bottom: 50px;
 }
 
 .pricing-list {
   display: flex;
   margin: 0 auto;
-  justify-content: space-between;
   align-items: center;
+  flex-direction: column;
+  gap: 32px;
 }
 
 .pricing-list-item {
@@ -42,10 +42,10 @@
   align-items: center;
   width: 322px;
   height: 456px;
-  max-width: calc((100% - 2 * 72px) / 3);
   box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.25);
   border-radius: 8px;
   transition: box-shadow 500ms ease-in-out, background-color 500ms ease-in-out;
+  padding: 24px 0 32px 0;
 }
 
 .pricing-list-title {
@@ -53,7 +53,6 @@
   font-size: 24px;
   line-height: 1.67;
   color: var(--color-dark-blue1);
-  margin: 24px 0 8px 0;
 }
 
 .pricing-list-description {
@@ -64,6 +63,15 @@
   margin-bottom: 16px;
 }
 
+.pricing-list-payment {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.01em;
+  color: #afafaf;
+  margin-bottom: 16px;
+}
+
 .pricing-list-text {
   font-family: "Inter", sans-serif;
   font-weight: 500;
@@ -71,15 +79,6 @@
   line-height: 1.38;
   letter-spacing: 0.01em;
   color: var(--color-dark-blue1);
-  margin-bottom: 16px;
-}
-
-.pricing-list-payment {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.19;
-  letter-spacing: 0.01em;
-  color: #afafaf;
   margin-bottom: 16px;
 }
 
@@ -110,7 +109,7 @@
 .pricing-button {
   display: block;
   margin-top: 22px;
-  padding: 11px 18px 11px 19px;
+  padding: 11px 18px;
   border-radius: 8px;
   background-color: var(--color-green);
   color: var(--color-white);
@@ -138,13 +137,54 @@
   color: var(--color-green);
 }
 
+.pricing-list-item:hover .pricing-list-title,
+.pricing-list-item:focus .pricing-list-title {
+  color: var(--color-white);
+}
+
+.pricing-list-item:hover .pricing-list-description,
+.pricing-list-item:focus .pricing-list-description {
+  color: var(--color-white);
+}
+
+.pricing-list-item:hover .pricing-list-text,
+.pricing-list-item:focus .pricing-list-text {
+  color: var(--color-white);
+}
+
+@media (min-width: 1150px) {
+  .pricing {
+    padding: 50px 0 150px 0;
+  }
+
+  .pricing-txt {
+    margin-bottom: 32px;
+  }
+
+  .pricing-title {
+    font-size: 40px;
+    margin-bottom: 16px;
+  }
+
+  .pricing-text {
+    margin-bottom: 49px;
+  }
+
+  .pricing-list {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .pricing-list-item {
+    max-width: calc((100% - 2 * 72px) / 3);
+  }
+}
 /* #endregion */
 
 /* #region section 2 great effects */
-
 .enterprise {
   background: linear-gradient(180deg, #f6f6f6 0%, rgba(246, 246, 246, 0) 100%);
-  padding: 52px 0;
+  padding: 46px 0;
 }
 
 .enterprise-container {
@@ -155,12 +195,12 @@
   font-weight: 600;
   font-size: 24px;
   text-transform: uppercase;
-  margin-bottom: 16px;
+  margin-bottom: 24px;
 }
 
 .enterprise-title {
-  font-size: 34px;
-  margin-bottom: 8px;
+  font-size: 32px;
+  margin-bottom: 25px;
 }
 
 .enterprise-text {
@@ -185,30 +225,53 @@
   background-color: #00ac98;
 }
 
+@media (min-width: 1150px) {
+  .enterprise {
+    padding: 52px 0;
+  }
+
+  .enterprise-word {
+    margin-bottom: 16px;
+  }
+
+  .enterprise-title {
+    font-size: 34px;
+    margin-bottom: 8px;
+  }
+}
+
 /* #endregion */
 
 /* #region section-3 great effects */
 .effects {
-  padding-top: 150px;
+  padding: 50px 0;
   background-color: var(--color-white);
 }
 
+.container.effects-container {
+  padding: 0 31px;
+}
+
 .effects-title {
-  font-size: 34px;
+  font-size: 32px;
+  margin-bottom: 33px;
   text-align: center;
-  margin-bottom: 56px;
 }
 
 .effects-box {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 60px;
+  gap: 32px;
 }
 
 .effects-box-list {
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 24px;
+}
+
+@media (min-width: 1150px) {
 }
 
 .effects-box-block {
@@ -233,6 +296,30 @@
 .effects-box-text {
   font-size: 16px;
   line-height: 1.75;
+}
+
+@media (min-width: 1150px) {
+  .effects {
+    padding: 150px 0;
+  }
+
+  .container.effects-container {
+    padding: 0 20px;
+  }
+
+  .effects-title {
+    font-size: 34px;
+    margin-bottom: 56px;
+  }
+
+  .effects-box {
+    flex-direction: row;
+    gap: 60px;
+  }
+
+  .effects-box-list {
+    gap: 32px;
+  }
 }
 
 /* #endregion */
@@ -373,3 +460,86 @@
   white-space: nowrap;
 }
 /* <!-- #endregion --> */
+
+/* <!-- region 5 -->*/
+
+.promo-container {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-green);
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  max-width: 371px;
+  border-radius: 32px;
+  gap: 20px;
+}
+
+.promo-text-btn {
+  text-align: center;
+  padding-top: 17px;
+  padding-left: 0;
+
+  padding-right: 0;
+}
+
+.promo-title {
+  color: var(--color-white);
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.51;
+  max-width: 332px;
+  margin-bottom: 52px;
+  font-size: 32px;
+}
+
+.promo-btn {
+  background-color: var(--color-white);
+  border: none;
+  width: 150px;
+  height: 50px;
+  border-radius: 8px;
+  color: var(--color-green);
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.promo-img {
+  min-width: 371px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+@media screen and (min-width: 1150px) {
+  .promo-container {
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 968px;
+    min-height: 345px;
+    gap: 0;
+  }
+
+  .promo-title {
+    max-width: 510px;
+    margin-bottom: 0;
+  }
+
+  .promo-text-btn {
+    display: flex;
+    align-items: start;
+    text-align: left;
+    flex-direction: column;
+    gap: 48px;
+    padding-left: 34px;
+    padding-top: 0;
+  }
+
+  .promo-btn {
+    color: #22343d;
+  }
+
+  .promo-img {
+    min-width: 361px;
+    max-width: 341px;
+  }
+}

@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css" />
   <link rel="stylesheet" href="./css/pricing.css" />
   <link rel="stylesheet" href="./css/global.css" />
+  <link rel="stylesheet" href="./css/header.css" />
+  <link rel="stylesheet" href="./css/footer.css" />
 </head>
 
 <body>
@@ -37,6 +39,11 @@
         <li class="header-register-item"><button class="header-register-btn sign-in" type="button">Sign In</button></li>
         <li class="header-register-item"><button class="header-register-btn sign-up" type="button">Sign Up</button></li>
       </ul>
+      <button class="burger-btn" type="button" aria-label="Open menu">
+      <svg class="burger-icon" width="28" height="31">
+        <use href="./images/icons.svg#icon-burger"></use>
+      </svg>
+    </button>
     </div>
   </header>
     <!-- #endregion -->
@@ -121,18 +128,18 @@
 
       <!-- #region Section 3 - Product is being used with great effects alongside: -->
       <section class="effects">
-        <div class="container">
+        <div class="container effects-container">
           <h2 class="effects-title">
             Product is being used with great effects alongside:
           </h2>
           <div class="effects-box">
-            <img
-              class="effects-box-image"
-              src="./images/amico.png"
+            <picture>
+              <source class="effects-box-image" srcset="./images/amico.png" media="(min-width: 1150px)">
+              <img
+              src="./images/amico-mob.webp"
               alt="devices"
-              width="528"
-              height="392"
-            />
+              />
+            </picture>
             <ul class="effects-box-list">
               <li class="effects-box-item">
                 <div class="effects-box-block">
@@ -236,11 +243,19 @@
       <!-- #endregion -->
 
       <!-- #region Section 5 - Join 100 -->
-      <section>
-        <h2>Join 100 Compannies who boost their business with Product</h2>
-        <button type="button">Get This</button>
-        <img src="./images/graphics.png" alt="graphics" />
-      </section>
+    <section class="promo">
+      <div class=" container promo-container">
+        <div class="promo-text-btn">
+          <h2 class="promo-title">
+            Join 100 Compannies who boost their business with Product
+          </h2>
+          <button class="promo-btn" type="button">Get This</button>
+        </div> 
+        <img class="promo-img" srcset="./images/section-10/screen-min.png 1x,./images/section-10/screen@2x-min.png 2x" src="./images/section-10/screen-min.png" alt="screen"
+        />
+      </div>
+  
+  </section>
       <!-- #endregion -->
     </main>
 
