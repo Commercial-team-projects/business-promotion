@@ -169,7 +169,7 @@ h1 {
 }
 
 .feature-item {
-  width: 240px;
+  width: calc((100% - 90px) / 4);
 
   display: flex;
   flex-direction: column;
