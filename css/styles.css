@@ -169,8 +169,7 @@ h1 {
 }
 
 .feature-item {
-  width: calc((100% - 90px) / 4);
-
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -178,6 +177,7 @@ h1 {
 
 @media (min-width: 1150px) {
   .feature-item {
+    width: calc((100% - 90px) / 4);
     align-items: start;
   }
 }
