@@ -125,5 +125,10 @@
             <path fill="#000" style="fill: var(--color1, #000)" d="M30.984 7.578c-0.825 0-1.494 0.734-1.494 1.639s0.669 1.639 1.494 1.639c0.825 0 1.494-0.734 1.494-1.639 0-0.435-0.157-0.851-0.438-1.159s-0.66-0.48-1.056-0.48z"></path>
             <path fill="#000" style="fill: var(--color1, #000)" d="M25.057 18.394l-2.906 4.113c-0.122 0.179-0.306 0.295-0.508 0.323s-0.406-0.036-0.565-0.176l-2.79-2.399-2.512 3.565c-0.182 0.317-0.536 0.459-0.862 0.346s-0.541-0.452-0.524-0.826c-0.002-0.185 0.055-0.365 0.161-0.509l3.004-4.25c0.121-0.177 0.302-0.294 0.502-0.323s0.403 0.031 0.562 0.167l2.79 2.409 2.45-3.457c0.118-0.178 0.297-0.297 0.495-0.328s0.401 0.027 0.56 0.161c0.328 0.282 0.392 0.799 0.143 1.165v0.020z"></path>
         </symbol>
+        <symbol id="icon-burger" viewBox="0 0 29 32">
+            <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3.0968" d="M3.613 16h21.677"></path>
+            <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3.0968" d="M3.613 8h21.677"></path>
+            <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3.0968" d="M3.613 24h21.677"></path>
+        </symbol>
     </defs>
 </svg>
