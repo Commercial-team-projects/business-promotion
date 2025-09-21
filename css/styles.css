@@ -141,6 +141,7 @@ h1 {
 
   margin-bottom: 37px;
 }
+
 .feature-item {
   width: 100%;
   display: flex;
@@ -157,6 +158,7 @@ h1 {
   align-items: center;
   margin-bottom: 24px;
 }
+
 .bg-green {
   background-color: var(--color-green);
 }
@@ -229,6 +231,7 @@ h1 {
     text-align: left;
   }
 }
+
 /* #endregion */
 
 /* #region section 3 management */
@@ -965,22 +968,24 @@ h1 {
   letter-spacing: 0.01em;
   max-width: 330px;
   margin: 0 auto;
-  margin-bottom: 36px;
+  margin-bottom: 32px;
 }
 
 .testimonial-list {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   margin: 0 auto;
   gap: 32px;
 }
 
 .testimonial-list-item {
-  min-width: 327px;
+  width: 327px;
   max-height: 240px;
   border: 1px solid var(--color-gray-border);
   border-radius: 5px;
-  padding: 28px 26px;
+  padding: 28px 28px 23px 28px;
+  padding-right: 0;
 }
 
 .testimonial-item-star {
@@ -994,7 +999,7 @@ h1 {
   line-height: 1.75;
   letter-spacing: 0.01em;
   margin-bottom: 16px;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .testimonial-block {
@@ -1043,6 +1048,8 @@ h1 {
     max-width: 540px;
     margin-bottom: 40px;
   }
+
+  .testimonial-item-desc {}
 }
 
 /* #endregion */
