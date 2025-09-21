@@ -130,5 +130,9 @@
             <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3.0968" d="M3.613 8h21.677"></path>
             <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3.0968" d="M3.613 24h21.677"></path>
         </symbol>
+        <symbol id="icon-circle-right" viewBox="0 0 30 32">
+            <path d="M17.021 17.484h-9.402v-3.048h9.402l-3.931-3.947 2.149-2.149 7.619 7.619-7.619 7.619-2.149-2.149 3.931-3.947z"></path>
+            <path d="M0 15.961c0 8.416 6.822 15.238 15.238 15.238s15.238-6.822 15.238-15.238c0-8.416-6.822-15.238-15.238-15.238s-15.238 6.822-15.238 15.238zM3.048 15.961c0-6.733 5.458-12.19 12.19-12.19s12.19 5.458 12.19 12.19c0 6.733-5.458 12.19-12.19 12.19s-12.19-5.458-12.19-12.19z"></path>
+        </symbol>
     </defs>
 </svg>
